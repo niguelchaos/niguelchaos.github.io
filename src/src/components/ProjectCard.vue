@@ -74,13 +74,15 @@ export default {
     },
 
     checkLink(projectlink) {
+      const githubSubstr = 'github.com'
       if (this.project.link === '') {
         this.showLink = false
-      } else if (this.project.link === 'https://fabianfroding.github.io/gamedev#portfolio') {
-        this.linkClass = 'bi bi-box-arrow-up-right'
-      } else {
+      } else if (this.project.link.includes(githubSubstr)) {
         this.showLink = true
         this.linkClass = 'bi bi-github'
+      } else {
+        this.showLink = true
+        this.linkClass = 'bi bi-box-arrow-up-right'
       }
     }
 

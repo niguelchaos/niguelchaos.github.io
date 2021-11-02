@@ -52,21 +52,6 @@
           </section>
         </b-container>
 
-        <b-container fluid class="skills-container" id="skills" >
-          <b-row>
-            <b-col class="skills-header-col">
-              <h1 class="skills-header">Skills</h1>
-              <hr id="dark-divider" class="divider my-3" />
-            </b-col>
-          </b-row>
-
-          <b-row id="skills-row">
-            <b-col id="skills-main-col" v-for="a in skills" :key="a.id" sm="12" md="6" lg="6" xl="3">
-              <skill-card :skill="a"></skill-card>
-            </b-col>
-          </b-row>
-        </b-container>
-
         <b-container fluid id="projects" class="projects">
           <!-- Projects-->
           <section class="projects-section">
@@ -97,6 +82,21 @@
               </b-tabs>
 
           </section>
+        </b-container>
+
+        <b-container fluid class="skills-container" id="skills" >
+          <b-row>
+            <b-col class="skills-header-col">
+              <h1 class="skills-header">Skills</h1>
+              <hr id="dark-divider" class="divider my-3" />
+            </b-col>
+          </b-row>
+
+          <b-row id="skills-row">
+            <b-col id="skills-main-col" v-for="a in skills" :key="a.id" sm="12" md="6" lg="6" xl="3">
+              <skill-card :skill="a"></skill-card>
+            </b-col>
+          </b-row>
         </b-container>
 
         <!-- Contact-->
@@ -161,8 +161,8 @@ export default {
       ],
       gamedevProjects: [
         { num: 1, course: 'Game Engine Architecture', title: 'Tron(1982) Replica', text: 'Partial recreation of the light cycle minigame from the Tron arcade video game by Bally Midway in C++ using SDL, with a focus on architectural decisions made during development. Due to tight time constraints, local multiplayer was implemented instead.', tech: 'C++, SDL', link: 'https://github.com/niguelchaos/GEATron', imgsrc: 'tron.gif' },
-        { num: 2, course: 'Game Development Project', title: 'Empathetic Puzzler', text: 'Group project for the course. A local 2-player game designed to elicit feelings of empathy between the players, highlighting to importance of diversity. Featuring 2 controllable cats within their own "world", players had to solve puzzles together to progress.', tech: 'Unity, C#, Git', link: '', imgsrc: 'empathuzzler.png' },
-        { num: 3, course: 'Personal Project', title: 'Timeloop Metroidvania', text: 'A metroidvania inspired by The Legend of Zelda: Majora\'s Mask and Hollow Knight involving a 3-day system. A joint collaboration with Fabian Fröding, whose portfolio is linked below.', tech: 'Unity, C#, PlasticSCM', link: 'https://fabianfroding.github.io/gamedev#portfolio', imgsrc: 'timeloop.png' },
+        { num: 2, course: 'Game Development Project', title: 'Get Meowt of Here', text: 'Group project for the course. A local 2-player puzzler designed to elicit empathy between the players by highlighting the importance of diversity. Featuring 2 controllable cats within their own "world", players had to solve puzzles together to progress.', tech: 'Unity, C#, Git', link: 'https://natashamangan.itch.io/get-meowt-of-here', imgsrc: 'empathuzzler.png' },
+        { num: 3, course: 'Personal Project', title: 'Timeloop Metroidvania', text: 'A metroidvania inspired by The Legend of Zelda: Majora\'s Mask and Hollow Knight involving a 3-day system. A joint collaboration with Fabian Fröding, whose portfolio is linked below.', tech: 'Unity, C#, PlasticSCM', link: 'https://fabianfroding.github.io/', imgsrc: 'timeloop.png' },
         { num: 4, course: 'Gameplay Design', title: 'Touching Hearts (Board Game)', text: 'Group project with a focus on prototyping and reflecting on design decisions. The 4 player card game had a dark but humourous theme, involving harvesting and trading organs to achieve their individual goals.', tech: 'Tabletopia (Website)', link: '', imgsrc: 'touchinghearts.png' },
         { num: 5, course: 'Product Design (Korean Exchange)', title: 'Feel The Disaster', text: 'A VR game made to teach the player the intricacies of recycling, requiring the player to recycle a milk carton correctly. My first Unity project, I had to learn Unity alongside the limitations of the Oculus Quest. Many mistakes were made - Without a clear initial vision, I highly overscoped, and the game was not fun. Sure learned a lot.', tech: 'Unity, Oculus Quest, C#', link: '', imgsrc: 'feelthedisaster.png' },
         { num: 6, course: 'Product Design (Korean Exchange)', title: 'The Biggest Brain', text: 'A simple 2-player button masher. Created using the frustratingly buggy Gameblox editor, it was my first game ever made. Surprisingly fun. ', tech: 'Gameblox(Website)', link: 'https://gameblox.org/play/23256/', imgsrc: 'thebiggestbrain.png' }
