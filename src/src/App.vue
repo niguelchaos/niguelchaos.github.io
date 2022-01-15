@@ -29,11 +29,15 @@ export default {
 }
 
 .content {
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   overflow: hidden;
   min-height: 20rem;
   scroll-behavior: smooth;
+  /* background-color: #f3e0ff; */
+  /* background-color: #5C6299; */
+  background-color: #2d3142;
+
 }
 
 #nav a.router-link-exact-active {
