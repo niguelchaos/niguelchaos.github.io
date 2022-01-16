@@ -12,7 +12,7 @@ export default {
     return {
         projectDetails: {
             title: "Timeloop Metroidvania",
-            subtitle: "",
+            subtitle: "2D Unity Metroidvania",
             mainImage: {name: "", index: 0},
             images: [],
             descriptionComponent: "timeloop-metroid-desc"

@@ -8,8 +8,8 @@
                <b-nav-item  id="navtext" href="./#about">About</b-nav-item>
                <b-nav-item id="navtext" href="./#projects">Projects</b-nav-item>
                <b-nav-item  id="navtext" href="./#skills">Skills</b-nav-item>
+               <b-nav-item id="navtext-resume"  href="./resume">Resume</b-nav-item>
                <b-nav-item id="navtext" href="./#contact">Contact</b-nav-item>
-               <b-nav-item id="navtext-resume"  href="./Resume_GameDesign.pdf" target="_blank">CV</b-nav-item>
             </b-nav>
          </b-navbar-nav>
       </b-collapse>

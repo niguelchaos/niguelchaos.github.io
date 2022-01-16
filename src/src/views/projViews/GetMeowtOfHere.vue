@@ -12,7 +12,7 @@ export default {
     return {
         projectDetails: {
             title: "Get Meowt Of Here",
-            subtitle: "",
+            subtitle: "Local Multiplayer Empathetic Puzzler",
             mainImage: {name: "", index: 0},
             images: [],
             descriptionComponent: "get-meowt-of-here-desc"

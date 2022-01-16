@@ -12,7 +12,7 @@ export default {
     return {
         projectDetails: {
             title: "Jenga Fortress",
-            subtitle: "",
+            subtitle: "Physics-based Local Multiplayer AR Duel",
             mainImage: {name: "", index: 0},
             images: [],
             descriptionComponent: "jenga-fortress-desc"

@@ -10,13 +10,13 @@ export default {
   components: { ProjectDetails },
   data: () => {
     return {
-        projectDetails: {
-            title: "Feel The Disaster",
-            subtitle: "",
-            mainImage: {name: "", index: 0},
-            images: [],
-            descriptionComponent: "feel-the-disaster-desc"
-        }
+      projectDetails: {
+          title: "Feel The Disaster",
+          subtitle: "Second game ever being a VR game was a mistake",
+          mainImage: {name: "", index: 0},
+          images: [],
+          descriptionComponent: "feel-the-disaster-desc"
+      }
     }
   }
 }

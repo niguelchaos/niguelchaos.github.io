@@ -12,7 +12,7 @@ export default {
     return {
         projectDetails: {
             title: "Tron Replica",
-            subtitle: "",
+            subtitle: "SDL Nightmare",
             mainImage: {name: "", index: 0},
             images: [],
             descriptionComponent: "tron-replica-desc"

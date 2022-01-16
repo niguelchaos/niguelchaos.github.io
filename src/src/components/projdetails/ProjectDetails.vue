@@ -1,13 +1,6 @@
 <template>
    <b-container>
-      <b-container class="name-heading">
-         <b-jumbotron class="name-jumbo" id="name-jumbo">
-            <h1 class="name-header">Nigel Chao</h1>
-            <h5 class="name-lead">Software Developer, Game Designer</h5>
-            <hr id=name-divider class="divider my-3" />
-         </b-jumbotron>
-      </b-container>
-
+      <name-header></name-header>
       <b-container class="project-details">
          <div class="section-heading">
             <h1>{{ projectDetails.title }}</h1>
@@ -23,6 +16,7 @@
 </template>
 
 <script>
+import NameHeader from '../NameHeader.vue';
 import FeelTheDisasterDesc from './projDescriptions/FeelTheDisasterDesc.vue';
 import TouchingHeartsDesc from './projDescriptions/TouchingHeartsDesc.vue';
 import TimeloopMetroidDesc from './projDescriptions/TimeloopMetroidDesc.vue';
@@ -33,12 +27,13 @@ import JengaFortressDesc from './projDescriptions/JengaFortressDesc.vue';
 export default {
 	props: ['projectDetails'],
     components: { 
-        FeelTheDisasterDesc,
-        TouchingHeartsDesc,
-        TimeloopMetroidDesc,
-        GetMeowtOfHereDesc,
-        TronReplicaDesc,
-        JengaFortressDesc
+      NameHeader,
+      FeelTheDisasterDesc,
+      TouchingHeartsDesc,
+      TimeloopMetroidDesc,
+      GetMeowtOfHereDesc,
+      TronReplicaDesc,
+      JengaFortressDesc
     },
     methods: {
 
@@ -47,22 +42,23 @@ export default {
 </script>
 
 <style scoped>
-.name-jumbo {
-   background-color: #2d3142;
-   color: #d8dcff;
-}
-.name-header {
-   color: #ecf1ff;
-}
-.name-lead {
-  color: #cacfff;
-  /* color:  #fde4c8; */
-}
-#name-divider {
-  background:  #6c759e;
+.section-heading {
+  padding-bottom: 2rem;
 }
 
 .project-details {
-  color:  #fdf8b4;
+  display: flex;
+  flex-direction: column;
+
+  color:  #dfe2ff;
+  padding-bottom: 7rem;
+  align-content: center;
+  align-items: center;
+  align-self: center;
+  justify-items: center;
+}
+.portfolio-description {
+   align-items: left;
+   text-align: left;
 }
 </style>

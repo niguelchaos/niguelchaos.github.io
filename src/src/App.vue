@@ -32,7 +32,7 @@ export default {
   /* display: flex; */
   justify-content: center;
   overflow: hidden;
-  min-height: 20rem;
+  min-height: 100vh;
   scroll-behavior: smooth;
   /* background-color: #f3e0ff; */
   /* background-color: #5C6299; */

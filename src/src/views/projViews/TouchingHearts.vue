@@ -10,13 +10,13 @@ export default {
   components: { ProjectDetails },
   data: () => {
     return {
-        projectDetails: {
-            title: "Touching Hearts",
-            subtitle: "",
-            mainImage: {name: "", index: 0},
-            images: [],
-            descriptionComponent: "touching-hearts-desc"
-        }
+      projectDetails: {
+          title: "Touching Hearts",
+          subtitle: "An Exercise in Prototyping",
+          mainImage: {name: "", index: 0},
+          images: [],
+          descriptionComponent: "touching-hearts-desc"
+      }
     }
   }
 }

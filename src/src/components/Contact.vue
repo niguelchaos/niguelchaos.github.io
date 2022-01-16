@@ -14,7 +14,7 @@
                 <em class="bi bi-linkedin" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"></em>
                 </a>
 
-                <a type="button" class="contactbtn btn btn-outline-light" v-bind:href="contacts.email">
+                <a type="button" class="contactbtn btn btn-outline-light" v-bind:href="'mailto:' + contacts.email">
                 <em class="bi bi-envelope-open-fill" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"></em>
                 </a>
 
@@ -23,6 +23,18 @@
                 </a>
             </b-col>
             </b-row>
+
+            <b-row>
+              <b-col class="contact-text">
+                <p>
+                  <strong> Email: </strong> {{contacts.email}}
+                  <br> <strong> LinkedIn: </strong> {{contacts.linkedin}}
+                  <br> <strong> Github: </strong> {{contacts.github}}
+                  <br> <strong> Call: </strong> {{contacts.phone}}
+                </p>
+              </b-col>
+            </b-row>
+
         </section>
     </b-container>
 </template>
@@ -34,8 +46,9 @@ export default {
       return {
          contacts: {
             linkedin: 'https://www.linkedin.com/in/nigel-chao/',
-            email: 'mailto:niguelchaos@gmail.com',
-            github: 'https://github.com/niguelchaos?tab=repositories'
+            email: 'niguelchaos@gmail.com',
+            github: 'https://github.com/niguelchaos?tab=repositories',
+            phone: '+46702911623'
          }
       }
    }
@@ -62,5 +75,9 @@ export default {
 .contact-divider-col {
   margin-left: 20%;
   margin-right: 20%;
+}
+.contact-text {
+  color: #dfe2ff;
+  text-align: left;
 }
 </style>
