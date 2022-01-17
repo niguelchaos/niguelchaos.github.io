@@ -10,13 +10,21 @@ export default {
   components: { ProjectDetails },
   data: () => {
     return {
-        projectDetails: {
-            title: "Tron Replica",
-            subtitle: "SDL Nightmare",
-            mainImage: {name: "", index: 0},
-            images: [],
-            descriptionComponent: "tron-replica-desc"
-        }
+      projectDetails: {
+          title: "Tron Replica",
+          subtitle: "SDL Nightmare",
+          mainImage: {name: "", index: 0},
+          images: [],
+          descriptionComponent: "tron-replica-desc"
+      }
+    }
+  },
+  mounted() {
+    this.scrollToTop()
+  },
+  methods: {
+    scrollToTop() {
+      window.scrollTo(0,0)
     }
   }
 }

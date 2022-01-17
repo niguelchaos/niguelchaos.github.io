@@ -13,8 +13,6 @@
 
         <projects-section></projects-section>
 
-        <skills-section></skills-section>
-
         <!-- Contact-->
         <contact-section></contact-section>
 
@@ -29,15 +27,15 @@
 
 
 import ContactSection from '@/components/Contact.vue'
-import SkillsSection from '@/components/Skills.vue'
-import AboutSection from '@/components/About.vue'
+// import SkillsSection from '@/components/Skills.vue'
+import AboutSection from '@/components/AboutOverview.vue'
 import ProjectsSection from '@/components/Projects.vue'
 
 export default {
   name: 'home',
   components: { 
     ContactSection,
-    SkillsSection,
+    // SkillsSection,
     AboutSection,
     ProjectsSection
   },

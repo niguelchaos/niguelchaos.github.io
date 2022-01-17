@@ -38,7 +38,7 @@
     <h3>Mechanics</h3>
     <b-container>
       <b-row>
-        <b-col>
+        <b-col md="6">
           <p><strong>Light Cycles:</strong></p>
           <ul>
               <li>Move around in a grid-like fashion</li>
@@ -48,7 +48,7 @@
           </ul>
         </b-col>
         
-        <b-col>
+        <b-col md="6">
           <p><strong>Game</strong></p>
           <ul>
               <li>Score for each Player</li>
@@ -77,20 +77,22 @@
     <b-container>
     <b-row>
       <b-col class="link-col">
+
         <a class="link-item float-left">
           <a type="button" class="btn btn-outline-light btn-lg pr-3" v-bind:href="'https://github.com/niguelchaos/GEATron'" target="_blank">
             <em :class="'bi bi-github'" width="32" height="32" fill="currentColor" viewBox="0 0 32 32"></em>
           </a>
         </a>
+        
         <a class="link-item float-left">
-          <b-button class="link-button" href="./GEATronReport.pdf" target="_blank"><strong>Read Tron Report</strong></b-button>
+          <b-button class="link-button" href="./ProjectDocuments/GEATronReport.pdf" target="_blank"><strong>Read Tron Report</strong></b-button>
         </a>
         
         <a class="link-item float-left">
-          <b-button class="link-button" href="./MidtermTron.pdf" target="_blank"><strong>Mid-Term Presentation</strong></b-button>
+          <b-button class="link-button" href="./ProjectDocuments/MidtermTron.pdf" target="_blank"><strong>Mid-Term Presentation</strong></b-button>
         </a>
         <a class="link-item float-left">
-          <b-button class="link-button" href="./FinalPresentationTron.pdf" target="_blank"><strong>Final Presentation</strong></b-button>
+          <b-button class="link-button" href="./ProjectDocuments/FinalPresentationTron.pdf" target="_blank"><strong>Final Presentation</strong></b-button>
         </a>
       </b-col>
     </b-row>

@@ -1,24 +1,39 @@
 <template>
   <div>
-    <h3>Description</h3>
-      <p>
-        Jenga Fortress is a physics-based, local 2-player Augmented Reality(AR) game for the Experimental Game Design Course.
-        Players need to force the opponent's "core block", which is hidden from them, out of their boundary in order to win.
-        They then take turns firing explosive blocks at each other, and can pick apart their fortresses to "fortify" their own core block.
-      </p>
-      <p>
-        Originally, there was the feature of letting players build their own fortresses. 
-        Ammo was supposed to be limited, forcing players to take apart their own fortress to use as ammo - hence the "Jenga" inspiration.
-        The development time of ~1 month required us to reduce our scope.
-        It was a challenge to reduce the scope while maintaining the central concepts of strategy and skill.
-      </p>
-      <p>
-        There were many challenges along the way. Our team was new to AR, and much time was spent fixing technical issues resulting from that.
-        Scaling in AR was especially difficult, as the game objects looked enormous in AR. Yet, scaling the objects down reduced physics stability. 
-        Rather than making the game objects smaller, the camera is actually made bigger and farther away from the content.
-        Optimizing the physics engine for the game was particularly important for our game. Each block is a rigidbody, and a single fortress has ~450 blocks.  
-        Much discussion revolved around optimizing the code architecture for easier task splitting and development, resulting in the usage of broadcasted events, singletons, and state machines.
-      </p>
+
+    <b-container class="description-container">
+      <b-row>
+        <b-col lg="5">
+          <h3>Description</h3>
+          <p>
+            Jenga Fortress is a physics-based, local 2-player Augmented Reality(AR) game for the Experimental Game Design Course.
+            Players need to force the opponent's "core block", which is hidden from them, out of their boundary in order to win.
+            They then take turns firing explosive blocks at each other, and can pick apart their fortresses to "fortify" their own core block.
+          </p>
+          <p>
+            Originally, there was the feature of letting players build their own fortresses. 
+            Ammo was supposed to be limited, forcing players to take apart their own fortress to use as ammo - hence the "Jenga" inspiration.
+            The development time of ~1 month required us to reduce our scope.
+            It was a challenge to reduce the scope while maintaining the central concepts of strategy and skill.
+          </p>
+
+        </b-col>
+
+        <b-col lg="7">
+          <div class="yt-vid">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/l_vUDjO9Uzw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <p class="pt-4">
+            There were many challenges along the way. Our team was new to AR, and much time was spent fixing technical issues resulting from that.
+            Scaling in AR was especially difficult, as the game objects looked enormous in AR. Yet, scaling the objects down reduced physics stability. 
+            Rather than making the game objects smaller, the camera is actually made bigger and farther away from the content.
+            Optimizing the physics engine for the game was particularly important for our game. Each block is a rigidbody, and a single fortress has ~450 blocks.  
+            Much discussion revolved around optimizing the code architecture for easier task splitting and development, resulting in the usage of broadcasted events, singletons, and state machines.
+          </p>
+        </b-col>
+      </b-row>
+
+    </b-container>
 
     <h3>Tools used:</h3>
     <ul>
@@ -55,15 +70,21 @@
     <!-- <p>Codebase:</p> -->
     <b-row>
       <b-col class="link-col">
-        <a type="button" class="linkbutton btn btn-outline-light btn-lg float-left pr-3" v-bind:href="'https://github.com/niguelchaos/JengaFortress'" target="_blank">
-          <em :class="'bi bi-github'" width="32" height="32" fill="currentColor" viewBox="0 0 32 32"></em>
+        
+        <a class="link-item float-left">
+          <a type="button" class="btn btn-outline-light btn-lg float-left pr-3" v-bind:href="'https://github.com/niguelchaos/JengaFortress'" target="_blank">
+            <em :class="'bi bi-github'" width="32" height="32" fill="currentColor" viewBox="0 0 32 32"></em>
+          </a>
         </a>
-        <a class="link-button">
-          <b-button href="./JengaFortressReport.pdf" target="_blank"><strong>Read Game Report</strong></b-button>
+
+        <a class="link-item">
+          <b-button class="link-button" href="./ProjectDocuments/JengaFortressReport.pdf" target="_blank"><strong>Read Game Report</strong></b-button>
         </a>
-        <a class="link-button">
-          <b-button href="./JengaFortressMidPresentation.pdf" target="_blank"><strong>Mid-term Presentation</strong></b-button>
+        
+        <a class="link-item">
+          <b-button class="link-button" href="./ProjectDocuments/JengaFortressMidPresentation.pdf" target="_blank"><strong>Mid-term Presentation</strong></b-button>
         </a>
+
       </b-col>
     </b-row>
     <!-- <br> <a href="./JengaFortressReport.pdf" target="_blank"><strong>Report</strong></a> -->
@@ -73,10 +94,46 @@
 
 <style scoped>
 .link-col {
-  display: flex;
+  display: block;
   align-items: baseline;
+  justify-content: center;
+}
+.link-item {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
 }
 .link-button {
-  padding-left: 2rem;
+  background-color: #5C6299;
+}
+.description-container {
+  padding-bottom: 5%;
+}
+.yt-vid {
+   position: relative;
+   height: 0;
+   padding-bottom: 56.25%;
+   padding-right: 100%;
+   /* padding-left: 0; */
+}
+.yt-vid iframe {
+   position: absolute;
+   top:0;
+   bottom: 0;
+   width: 100%;
+   height: 100%;
+}
+
+@media (max-width: 430px) {
+   .yt-vid {
+      /* height: 0px; */
+      /* padding-top: 25px; */
+      /* padding-bottom: 56.2%; */
+      max-width: 300px;
+      position: relative;
+   }
+   .yt-vid iframe {
+      width: 100%;
+      height: 100%;
+   }
 }
 </style>

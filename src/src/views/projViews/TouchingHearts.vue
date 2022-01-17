@@ -18,6 +18,14 @@ export default {
           descriptionComponent: "touching-hearts-desc"
       }
     }
+  },
+  mounted() {
+    this.scrollToTop()
+  },
+  methods: {
+    scrollToTop() {
+      window.scrollTo(0,0)
+    }
   }
 }
 </script>

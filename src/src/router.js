@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
+import Resume from './views/Resume.vue'
 // import FeelTheDisaster from './views/projViews/FeelTheDisaster.vue'
 
 Vue.use(Router)
@@ -14,7 +15,12 @@ const routes = [
   {
     path: '/resume',
     name: 'Resume',
-    component: () => import('./views/Resume.vue')
+    component: Resume
+  },
+  {
+    path: '/about',
+    name: 'About',
+    component: () => import('./views/AboutDetails.vue')
   },
   {
     path: '/feelthedisaster',

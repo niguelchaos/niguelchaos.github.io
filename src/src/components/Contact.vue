@@ -27,10 +27,6 @@
             <b-row>
               <b-col class="contact-text">
                 <p>
-                  <strong> Email: </strong> {{contacts.email}}
-                  <br> <strong> LinkedIn: </strong> {{contacts.linkedin}}
-                  <br> <strong> Github: </strong> {{contacts.github}}
-                  <br> <strong> Call: </strong> {{contacts.phone}}
                 </p>
               </b-col>
             </b-row>
@@ -47,8 +43,7 @@ export default {
          contacts: {
             linkedin: 'https://www.linkedin.com/in/nigel-chao/',
             email: 'niguelchaos@gmail.com',
-            github: 'https://github.com/niguelchaos?tab=repositories',
-            phone: '+46702911623'
+            github: 'https://github.com/niguelchaos?tab=repositories'
          }
       }
    }

@@ -18,6 +18,14 @@ export default {
             descriptionComponent: "get-meowt-of-here-desc"
         }
     }
+  },
+  mounted() {
+    this.scrollToTop()
+  },
+  methods: {
+    scrollToTop() {
+      window.scrollTo(0,0)
+    }
   }
 }
 </script>

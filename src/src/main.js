@@ -6,6 +6,7 @@ import VueSmoothScroll from 'vue3-smooth-scroll'
 import VueSilentbox from 'vue-silentbox'
 import AOS from 'aos'
 import VueLazyload from 'vue-lazyload'
+import ConnectHistory from 'connect-history-api-fallback'
 
 import 'aos/dist/aos.css'
 import 'bootstrap/dist/css/bootstrap.css'
@@ -15,6 +16,7 @@ Vue.use(VueSilentbox)
 Vue.use(BootstrapVue)
 Vue.use(VueSmoothScroll)
 Vue.use(VueLazyload)
+Vue.use(ConnectHistory)
 
 Vue.config.productionTip = false
 

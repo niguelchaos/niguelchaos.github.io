@@ -18,6 +18,14 @@ export default {
           descriptionComponent: "feel-the-disaster-desc"
       }
     }
+  },
+  mounted() {
+    this.scrollToTop()
+  },
+  methods: {
+    scrollToTop() {
+      window.scrollTo(0,0)
+    }
   }
 }
 </script>

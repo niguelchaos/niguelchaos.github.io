@@ -48,7 +48,9 @@ export default {
   background-size: cover;
   text-align: center;
   align-items: center;
-  background-color: #fcd0a1;
+  /* background-color: #fcd0a1; */
+  background-color: #2d3142;
+
   padding-top: 7.5rem;
   padding-bottom: 7.5rem;
   justify-content:center;

@@ -1,5 +1,6 @@
 <template>
-  <div data-aos="fade-in" data-aos-duration="100" data-aos-easing="ease-in-sine">
+  <!-- <div data-aos="fade-in" data-aos-duration="100" data-aos-easing="ease-in-sine"> -->
+  <div>
       <b-card id="skills-card" class="overflow-hidden">
          <b-card-title>
             {{skill.title}}
@@ -21,8 +22,12 @@ export default {
 <style scoped>
 
 #skills-card {
-  background-color: #ffead3;
-  border-color: #fff0e1;
+  color: #2c3e50;
+  border-color: #96a5eb;
+  background-color: #e4e6ff;
+
+  /* background-color: #ffead3; */
+  /* border-color: #fff0e1; */
   border-radius: 25px;
   margin-top: 5%;
   margin-bottom: 5%;

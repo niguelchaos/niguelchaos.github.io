@@ -44,7 +44,6 @@
       </b-container>
 
       <education-card></education-card>
-      <!-- <h4>Education</h4> -->
 
     </b-container>
 
@@ -61,9 +60,18 @@ export default {
   // name: "resume",
   components: { NameHeader, EducationCard },
   data() {
-    return {
+      return {
+
+      }
+    },
+    mounted() {
+      this.scrollToTop()
+    },
+    methods: {
+      scrollToTop() {
+        window.scrollTo(0,0)
+      }
     }
-  }
 }
 </script>
 
