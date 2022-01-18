@@ -55,6 +55,11 @@ const routes = [
     name: 'JengaFortress',
     component: () => import('./views/projViews/JengaFortress.vue')
   },
+  {
+    path: '/raphlanim',
+    name: 'RaphlAnim',
+    component: () => import('./views/projViews/RaphlAnim.vue')
+  },
   
   {
     path: '/index.html',

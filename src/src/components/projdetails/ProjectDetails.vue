@@ -23,6 +23,7 @@ import TimeloopMetroidDesc from './projDescriptions/TimeloopMetroidDesc.vue';
 import GetMeowtOfHereDesc from './projDescriptions/GetMeowtOfHereDesc.vue';
 import TronReplicaDesc from './projDescriptions/TronReplicaDesc.vue';
 import JengaFortressDesc from './projDescriptions/JengaFortressDesc.vue';
+import RaphlAnimDesc from './projDescriptions/RaphlAnimDesc.vue';
 
 export default {
 	props: ['projectDetails'],
@@ -33,7 +34,8 @@ export default {
       TimeloopMetroidDesc,
       GetMeowtOfHereDesc,
       TronReplicaDesc,
-      JengaFortressDesc
+      JengaFortressDesc,
+      RaphlAnimDesc
     },
     methods: {
 

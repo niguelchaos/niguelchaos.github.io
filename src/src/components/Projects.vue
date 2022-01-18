@@ -29,6 +29,18 @@
             </b-row>
           </b-container>
         </b-tab>
+
+        <b-tab title="Miscellaneous">
+          <b-container class="projectcards-container" fluid>
+            <b-row>
+              <b-col class="proj-main-col" v-for="miscproj in miscProjects" :key="miscproj.id" xl="12" no-gutters>
+                <project-card :project="miscproj"></project-card>
+              </b-col>
+            </b-row>
+          </b-container>
+        </b-tab>
+
+
       </b-tabs>
     </b-container>
   </b-container>
@@ -53,9 +65,12 @@ export default {
         { num: 4, course: 'Game Development Project', title: 'Get Meowt of Here', text: 'A local 2-player puzzler designed to elicit empathy between the players by highlighting the importance of diversity. Featuring 2 controllable cats within their own "world", players had to solve puzzles together to progress.', tech: 'Unity, C#, Git', link: 'https://natashamangan.itch.io/get-meowt-of-here', imgsrc: 'empathuzzler.png', detailslink: "/getmeowtofhere" },
         { num: 3, course: 'Personal Project', title: 'Timeloop Metroidvania', text: 'A metroidvania inspired by The Legend of Zelda: Majora\'s Mask and Hollow Knight involving a 3-day system. A joint collaboration with Fabian Fröding, whose portfolio is linked below.', tech: 'Unity, C#, PlasticSCM', link: 'https://fabianfroding.github.io/', imgsrc: 'timeloop.png', detailslink: "/timeloopmetroid" },
         { num: 2, course: 'Gameplay Design', title: 'Touching Hearts (Board Game)', text: 'Group project with a focus on prototyping and reflecting on design decisions. The 4 player card game had a dark but humourous theme, involving harvesting and trading organs to achieve their individual goals.', tech: 'Tabletopia (Website)', link: '', imgsrc: 'touchinghearts.png', detailslink: "/touchinghearts" },
-        { num: 1, course: 'Product Service System Design', title: 'Feel The Disaster', text: 'A VR game made to teach the player the intricacies of recycling, requiring the player to recycle a milk carton correctly. My first Unity project, I had to learn Unity alongside the limitations of the Oculus Quest. Many mistakes were made.', tech: 'Unity, Oculus Quest, C#', link: '', imgsrc: 'feelthedisaster.png', detailslink: "/feelthedisaster" },
+        { num: 1, course: 'Product Service System Design', title: 'Feel The Disaster', text: 'A VR game made to teach the player the intricacies of recycling, requiring the player to recycle a milk carton correctly. My first Unity project, I had to learn Unity alongside the limitations of the Oculus Quest. Many mistakes were made.', tech: 'Unity, Oculus Quest, C#', link: 'https://github.com/niguelchaos/FeelTheDisaster', imgsrc: 'feelthedisaster.png', detailslink: "/feelthedisaster" },
         { num: 0, course: 'Product Service System Design', title: 'The Biggest Brain', text: 'A simple 2-player button masher. Created using the frustratingly buggy Gameblox editor, it was my first game ever made. Surprisingly fun. For like, 30 seconds. ', tech: 'Gameblox(Website)', link: 'https://gameblox.org/play/23256/', imgsrc: 'thebiggestbrain.png', detailslink: "" }
       ],
+      miscProjects: [
+        { num: 0, course: 'Expression with 2D Animation 1', title: 'Original Character Animation', text: 'Unity integration of an original character animation I created. The course focused on the quality of character dynamics following the 12 Principles of Animation in order to convey personality through animation.', tech: 'Krita, Unity', link: 'https://github.com/niguelchaos/RaphlUnityIntegration', imgsrc: 'raphlanim.gif', detailslink: "/raphlanim" }
+      ]
     }
   }
 }

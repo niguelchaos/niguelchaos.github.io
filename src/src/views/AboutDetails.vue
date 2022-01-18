@@ -26,7 +26,7 @@
         <b-row>
           <b-col class="float-left">
             <b-container class="games-list">
-              <h4>Games That Live Low Rent in my Mind</h4>
+              <h4>Games That Tickle my Fancy</h4>
               <ul>
                 <li><strong>Beat Saber</strong>: My arms dead</li>
                 <li><strong>Pistol Whip</strong>: My legs dead</li>
@@ -51,7 +51,7 @@
                 <li><strong>Advance Wars</strong></li>
                 <li><strong>Fire Emblem</strong> - I abused the life outta save states hehe</li>
                 <li><a :href="'https://www.newgrounds.com/portal/view/459232'" target="_blank"><strong>The Battalion Trilogy</strong></a></li>
-                <li><a :href="'https://www.youtube.com/watch?v=H5xhH46pakE'" target="_blank"><strong>Sierra 7(Flash)</strong></a>, <strong>Tactical Assassin(Flash)</strong> series: Great immersion.</li>
+                <li><a :href="'https://www.newgrounds.com/portal/view/561860'" target="_blank"><strong>Sierra 7(Flash)</strong></a>, <strong>Tactical Assassin(Flash)</strong> series: Great immersion.</li>
                 <li><strong>Xiao Xiao Collection(<a :href="'https://www.newgrounds.com/portal/view/257184'" target="_blank">4</a>, <a :href="'https://www.newgrounds.com/portal/view/65694'" target="_blank">9</a>)</strong>: Classics. Actually the entire collection I don't care if they aren't games</li>
                 <li><a :href="'https://www.shockwave.com/gamelanding/cyborglivestock.jsp'" target="_blank"><strong>Super Cyborg Livestock from Outer Space</strong></a>: Clean presentation, 11/10 story</li>
               </ul>

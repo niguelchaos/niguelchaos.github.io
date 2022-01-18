@@ -61,7 +61,6 @@ export default {
   components: { NameHeader, EducationCard },
   data() {
       return {
-
       }
     },
     mounted() {

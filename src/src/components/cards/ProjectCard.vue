@@ -41,7 +41,7 @@
                         <em :class="this.linkClass" width="32" height="32" fill="currentColor" viewBox="0 0 32 32"></em>
                      </a>
                      <a v-if="this.showDetailsLink" class="details-link float-left">
-                        <router-link :to="`${project.detailslink}`"><strong>Details</strong></router-link>
+                        <router-link :to="`${project.detailslink}`"><strong>More Details</strong></router-link>
                      </a>
                   </b-col></b-row>
 

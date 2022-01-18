@@ -12,7 +12,7 @@ export default {
     return {
       projectDetails: {
           title: "Feel The Disaster",
-          subtitle: "Second game ever being a VR game was a mistake",
+          subtitle: "The title is actually describing the development of this game",
           mainImage: {name: "", index: 0},
           images: [],
           descriptionComponent: "feel-the-disaster-desc"

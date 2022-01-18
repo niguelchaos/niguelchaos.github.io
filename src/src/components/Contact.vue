@@ -24,12 +24,12 @@
             </b-col>
             </b-row>
 
-            <b-row>
+            <!-- <b-row>
               <b-col class="contact-text">
                 <p>
                 </p>
               </b-col>
-            </b-row>
+            </b-row> -->
 
         </section>
     </b-container>
