@@ -15,18 +15,22 @@
           Born in Macau, my formative years were spent trying to not disappoint my parents, and without a single doubt ultimately failing to do so.
           As a child, I don't think I had high aspirations or dreams - other than spending as much time as possible playing games.
         </p>
+        <hr id=about-divider class="divider my-3" />
         <p class="text-left">
           Moving to Sweden in 2014, my experiences have shown me that there is always someone better than you, some things aren't what they seem on the inside, and grades don't really have any meaning.
           I wanted to make games because I didn't want the consequences of my actions to affect the world in the same way software in hospitals and stuff does, 
           but we both know thats wrong because media always influence people. I guess games are as dangerous as malfunctioning hospital software.
         </p>
+        <hr id=about-divider class="divider my-3" />
       </b-container>
+
 
       <b-container class="details-item">
         <b-row>
           <b-col class="float-left">
             <b-container class="games-list">
               <h4>Games That Tickle my Fancy</h4>
+              <p>Updated whenever more come to mind.</p>
               <ul>
                 <li><strong>Beat Saber</strong>: My arms dead</li>
                 <li><strong>Pistol Whip</strong>: My legs dead</li>
@@ -37,23 +41,40 @@
                 <li><strong>Wacca</strong>: The booths actually have a really nice crisp screen</li>
                 <li><strong>House of the Dying Sun</strong></li>
                 <li><strong>Freespace 2</strong></li>
-                <li><strong>Ace Combat 2,7</strong>: I should really play 4</li>
+                <li><strong>Ace Combat Series</strong>: I should really play 4</li>
                 <li><strong>Apex Legends, Titanfall 2</strong></li>
                 <li><strong>Call of Duty: Modern Warfare</strong> series</li>
                 <li><strong>Dishonored</strong> series</li>
                 <li><strong>Skyrim</strong></li>
                 <li><strong>Mirror's Edge</strong></li>
                 <li><strong>Sekiro: Shadows Die Twice</strong></li>
-                <li><strong>Star Wars: Battlefront 2(2005)</strong>: I haven't played the new ones</li>
                 <li><strong>Black(PS2)</strong></li>
                 <li><strong>Need for Speed Carbon</strong></li>
-                <li><strong>Need for Speed Most Wanted(GBA)</strong></li>
                 <li><strong>Advance Wars</strong></li>
                 <li><strong>Fire Emblem</strong> - I abused the life outta save states hehe</li>
                 <li><a :href="'https://www.newgrounds.com/portal/view/459232'" target="_blank"><strong>The Battalion Trilogy</strong></a></li>
-                <li><a :href="'https://www.newgrounds.com/portal/view/561860'" target="_blank"><strong>Sierra 7(Flash)</strong></a>, <strong>Tactical Assassin(Flash)</strong> series: Great immersion.</li>
-                <li><strong>Xiao Xiao Collection(<a :href="'https://www.newgrounds.com/portal/view/257184'" target="_blank">4</a>, <a :href="'https://www.newgrounds.com/portal/view/65694'" target="_blank">9</a>)</strong>: Classics. Actually the entire collection I don't care if they aren't games</li>
+                <li><a :href="'https://www.newgrounds.com/portal/view/561860'" target="_blank"><strong>Sierra 7(Flash)</strong></a>, <strong>Tactical Assassin(Flash)</strong> series</li>
+                <li><strong>Xiao Xiao Collection(<a :href="'https://www.newgrounds.com/portal/view/257184'" target="_blank">4</a>, <a :href="'https://www.newgrounds.com/portal/view/65694'" target="_blank">9</a>)</strong>: Classics. Actually the entire collection.</li>
                 <li><a :href="'https://www.shockwave.com/gamelanding/cyborglivestock.jsp'" target="_blank"><strong>Super Cyborg Livestock from Outer Space</strong></a>: Clean presentation, 11/10 story</li>
+              </ul>
+            </b-container>
+            
+          </b-col>
+        </b-row>
+      </b-container>
+
+      <b-container class="details-item">
+        <b-row>
+          <b-col class="float-left">
+            <b-container class="games-list">
+              <h4>Important Videos</h4>
+              <p>Completely irrelevant to game or software development.</p>
+              <ul>
+                <li><a :href="'https://www.youtube.com/watch?v=gM-_Jt0m6eY'" target="_blank"><strong>Feelin Kinda Panzer</strong></a></li>
+                <li><a :href="'https://www.youtube.com/watch?v=1cfKc8U4iwg'" target="_blank"><strong>Nvidia Bread</strong></a></li>
+                <li><a :href="'https://www.youtube.com/watch?v=c-rTM9qOasQ'" target="_blank"><strong>Dead Fantasy series</strong></a></li>
+                <li><a :href="'https://www.youtube.com/watch?v=4CTSf1QRk9w'" target="_blank"><strong>bottom gear</strong></a></li>
+                <li><a :href="'https://www.youtube.com/watch?v=siIE8i48hlg'" target="_blank"><strong>ボーカロイドたちが2コードくり返してﾃｯﾃｰﾃﾚｯﾃｰとか叫ぶだけ</strong></a></li>
               </ul>
             </b-container>
             
@@ -94,6 +115,10 @@ export default {
 
 .section-heading {
   padding-bottom: 2rem;
+}
+
+#about-divider {
+  background:  rgba(223, 226, 255, 0.548)
 }
 
 .details {
