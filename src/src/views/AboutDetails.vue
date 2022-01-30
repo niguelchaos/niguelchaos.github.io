@@ -46,6 +46,7 @@
                 <li><strong>Call of Duty: Modern Warfare</strong> series</li>
                 <li><strong>Dishonored</strong> series</li>
                 <li><strong>Skyrim</strong></li>
+                <li><strong>Horizon Zero Dawn</strong></li>
                 <li><strong>Mirror's Edge</strong></li>
                 <li><strong>Sekiro: Shadows Die Twice</strong></li>
                 <li><strong>Black(PS2)</strong></li>
@@ -71,6 +72,7 @@
               <p>Completely irrelevant to game or software development.</p>
               <ul>
                 <li><a :href="'https://www.youtube.com/watch?v=gM-_Jt0m6eY'" target="_blank"><strong>Feelin Kinda Panzer</strong></a></li>
+                <li><a :href="'https://www.youtube.com/watch?v=JNpd1WjFkUk'" target="_blank"><strong>C H E S S - P A W N - R E Q U I E M</strong></a></li>
                 <li><a :href="'https://www.youtube.com/watch?v=1cfKc8U4iwg'" target="_blank"><strong>Nvidia Bread</strong></a></li>
                 <li><a :href="'https://www.youtube.com/watch?v=c-rTM9qOasQ'" target="_blank"><strong>Dead Fantasy series</strong></a></li>
                 <li><a :href="'https://www.youtube.com/watch?v=4CTSf1QRk9w'" target="_blank"><strong>bottom gear</strong></a></li>

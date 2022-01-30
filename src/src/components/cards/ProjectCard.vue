@@ -1,6 +1,6 @@
 <template>
   <div :data-aos="fadeStyle" data-aos-duration="100" data-aos-easing="ease-out-sine">
-   <b-card class="proj-card overflow-hidden shadow-sm" >
+   <b-card class="proj-card overflow-hidden shadow-sm">
       <b-row no-gutters>
 
          <b-col v-if="project.num % 2 > 0" class="card-img-col" lg="5">
@@ -26,24 +26,37 @@
 
                   <b-row class="text-row"><b-col class="text-col">
                      <b-card-body class="cardbody">
-                        <b-card-sub-title class="mb-2">{{project.course}}</b-card-sub-title>
-                        <b-card-title class="card-title">
-                           {{project.title}}
-                        </b-card-title>
+
+                        <!-- <b-row align-v="baseline">
+                           <b-col><b-card-title class="proj-title card-title">{{project.title}}</b-card-title></b-col>
+                           <b-col><b-card-sub-title class="proj-course mb-2">{{project.course}}</b-card-sub-title></b-col>
+                        </b-row> -->
+
+                        <b-card-sub-title class="proj-course">{{project.course}}</b-card-sub-title>
+                        <hr class="text-divider" />
+                        <b-card-title class="proj-title">{{project.title}}</b-card-title>
+                        
+                        <p class="proj-roles">{{project.roles}}</p>
+
                         <b-card-text class="card-text">{{project.text}}</b-card-text>
-                        <span class="align-middle font-weight-bolder">Technologies: {{project.tech}}</span>
-                        <hr class="d-none d-lg-block mb-3 ml-0" />
+                        <span class="align-middle font-weight-bolder">{{project.highlightTitle}}: {{project.tech}}</span>
+                        <!-- <hr class="mb-3 ml-0" /> -->
+                        <hr class="text-divider" />
                      </b-card-body>
                   </b-col> </b-row>
+                  
+                  <b-row class="linkbutton-row" align-v="baseline">
+                     <b-col class="linkbutton-col">
+                        <a v-if="this.showLink" type="button" class="linkbutton btn btn-outline-dark btn-lg float-right" v-bind:href="project.link" target="_blank">
+                           <em :class="this.linkClass" width="32" height="32" fill="currentColor" viewBox="0 0 32 32"></em>
+                        </a>
+                        <b-button v-if="this.showDetailsLink" class="details-button float-left" variant="outline" :to="`${project.detailslink}`"><strong>More Details</strong></b-button>
 
-                  <b-row class="linkbutton-row"><b-col class="linkbutton-col">
-                     <a v-if="this.showLink" type="button" class="linkbutton btn btn-outline-dark btn-lg float-right" v-bind:href="project.link" target="_blank">
-                        <em :class="this.linkClass" width="32" height="32" fill="currentColor" viewBox="0 0 32 32"></em>
-                     </a>
-                     <a v-if="this.showDetailsLink" class="details-link float-left">
-                        <router-link :to="`${project.detailslink}`"><strong>More Details</strong></router-link>
-                     </a>
-                  </b-col></b-row>
+                        <!-- <a v-if="this.showDetailsLink" class="details-link float-left">
+                           <router-link :to="`${project.detailslink}`"><strong>More Details</strong></router-link>
+                        </a> -->
+                     </b-col>
+                  </b-row>
 
                </b-col>
             </b-row>
@@ -131,7 +144,24 @@ export default {
    margin-right: auto;
    align-self: center;
    text-align: left;
+}
 
+.text-divider {
+   margin-bottom: 1rem;
+   margin-top: 0.5rem;
+   background-color: #2c3e504d;
+}
+.proj-course {
+   text-align: left;
+   margin-bottom: 0.5rem;
+}
+.proj-title {
+   margin-bottom: 0.4rem;
+}
+.proj-roles {
+   margin-bottom: 1rem;
+   font-weight: bold;
+   font-size: 0.9rem;
 }
 
 @media (max-width: 430px) {
@@ -184,6 +214,10 @@ export default {
    margin-top: 0%;
    margin-left: 5%;
    margin-right: 5%;
+}
+.details-button {
+   border-color: #5f6994;
+   border-radius: 0.5rem;
 }
 
 </style>

@@ -37,6 +37,7 @@
     <h3>Tools used:</h3>
     <ul>
       <li>Unity2D</li>
+      <li>C#</li>
       <li>Version Control - Git</li>
     </ul>
 
@@ -47,8 +48,11 @@
       As time progressed, we constantly reduced our scope to fit the timeframe, resulting in 3 levels. 
       This meant that we had to condense much of the in game narrative, and also lowered our chances with giving players a chance to know each other, as the game was being too short to do so.
       The timeframe also meant that very little user testing was done to nail down the aesthetics of the game before the exhibition - which essentially became our user testing session.
-
-      During playtests, many players did not feel like their empathy increased after playing, since puzzles were seen as too easy, resulting in a lack of player communication.
+      This project also taught me to not shy away from using existing assets, and the various ways to use them.
+    </p>
+    <p>
+      During playtests, many players did not feel like their empathy increased after playing, since puzzles were seen as too easy, resulting in a lack of player communication. 
+      We did try to prioritize the game being fun rather than raising empathy, as we thought that it was a more achievable goal. 
     </p>
 
       

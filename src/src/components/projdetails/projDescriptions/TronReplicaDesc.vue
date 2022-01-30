@@ -15,12 +15,7 @@
             In the original, the player would play through the 4 mini games in increasing difficulty endlessly. For the light cycle mini-game, a higher difficulty meant more enemies.  
             A 2 player solution was implemented here instead, scrapping the increasing difficulty mechanic.
           </p>
-          <p>
-            Challenges consisted of getting walls to connect properly while changing speed, emulating grid-like movement, collision detections, and prioritizing features. 
-            Details of challenges can be found in the mid-term presentation. 
-            Although I really wanted to implement AI enemies, too much time was spent on fixing core issues, which was a bit sad.
-            Development time was ~3 weeks. 
-          </p>
+
         </b-col>
 
         <b-col lg="7">
@@ -28,6 +23,13 @@
         </b-col>
       </b-row>
     </b-container>
+
+    <p>
+      Challenges consisted of getting walls to connect properly while changing speed, emulating grid-like movement, collision detections, and prioritizing features. 
+      Details of challenges can be found in the mid-term presentation. 
+      Although I really wanted to implement AI enemies, too much time was spent on fixing core issues, which was a bit sad.
+      Development time was ~3 weeks. 
+    </p>
     
 
     <h3>Specification</h3>

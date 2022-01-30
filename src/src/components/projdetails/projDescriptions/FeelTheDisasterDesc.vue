@@ -117,7 +117,8 @@
     <h3>Tools used:</h3>
     <ul>
       <li>Unity3D</li>
-      <li>Version Control - Git</li>
+      <li>Oculus Quest</li>
+      <li>VRTK</li>
     </ul>
 
       

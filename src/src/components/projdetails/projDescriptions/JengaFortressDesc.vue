@@ -68,24 +68,26 @@
       </ul>
     <h3 class="align-center">Links</h3>
     <!-- <p>Codebase:</p> -->
-    <b-row>
-      <b-col class="link-col">
-        
-        <a class="link-item float-left">
-          <a type="button" class="btn btn-outline-light btn-lg float-left pr-3" v-bind:href="'https://github.com/niguelchaos/JengaFortress'" target="_blank">
-            <em :class="'bi bi-github'" width="32" height="32" fill="currentColor" viewBox="0 0 32 32"></em>
-          </a>
-        </a>
+    <b-row class="link-row" align-v="center">
 
-        <a class="link-item">
-          <b-button class="link-button" href="./ProjectDocuments/JengaFortressReport.pdf" target="_blank"><strong>Read Game Report</strong></b-button>
+      <b-col class="link-item">
+        <a type="button" class="btn btn-outline-light btn-lg pr-3" v-bind:href="'https://github.com/niguelchaos/JengaFortress'" target="_blank">
+          <em :class="'bi bi-github'" width="32" height="32" fill="currentColor" viewBox="0 0 32 32"></em>
         </a>
-        
-        <a class="link-item">
-          <b-button class="link-button" href="./ProjectDocuments/JengaFortressMidPresentation.pdf" target="_blank"><strong>Mid-term Presentation</strong></b-button>
-        </a>
-
       </b-col>
+
+      <b-col class="link-item">
+        <b-button class="link-button" href="./ProjectDocuments/JengaFortressReport.pdf" target="_blank"><strong>Read Game Report</strong></b-button>
+      </b-col>
+      
+      <b-col class="link-item">
+        <b-button class="link-button" href="./ProjectDocuments/JengaFortressMidPresentation.pdf" target="_blank"><strong>Mid-term Presentation</strong></b-button>
+      </b-col>
+
+      <b-col class="link-item">
+        <b-button class="link-button" href="./ProjectDocuments/JengFort.apk" target="_blank"><strong>Download JengFort.apk</strong></b-button>
+      </b-col>
+
     </b-row>
     <!-- <br> <a href="./JengaFortressReport.pdf" target="_blank"><strong>Report</strong></a> -->
     
@@ -93,10 +95,10 @@
 </template>
 
 <style scoped>
-.link-col {
-  display: block;
-  align-items: baseline;
-  justify-content: center;
+.link-row {
+  /* display: block; */
+  /* align-items: center; */
+  /* justify-content: center; */
 }
 .link-item {
   margin-right: 1rem;
