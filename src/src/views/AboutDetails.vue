@@ -6,7 +6,7 @@
       <b-container class="section-heading">
       <h1>About Me</h1>
       <h6>Commoner of Society</h6>
-      <hr id="heading-divider" class="divider my-3" />
+      <hr id="about-divider" class="divider my-3" />
       </b-container>
 
       <b-container class="details-item">

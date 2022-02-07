@@ -23,17 +23,19 @@
           <div class="yt-vid">
               <iframe width="560" height="315" src="https://www.youtube.com/embed/l_vUDjO9Uzw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
-          <p class="pt-4">
-            There were many challenges along the way. Our team was new to AR, and much time was spent fixing technical issues resulting from that.
-            Scaling in AR was especially difficult, as the game objects looked enormous in AR. Yet, scaling the objects down reduced physics stability. 
-            Rather than making the game objects smaller, the camera is actually made bigger and farther away from the content.
-            Optimizing the physics engine for the game was particularly important for our game. Each block is a rigidbody, and a single fortress has ~450 blocks.  
-            Much discussion revolved around optimizing the code architecture for easier task splitting and development, resulting in the usage of broadcasted events, singletons, and state machines.
-          </p>
         </b-col>
       </b-row>
 
     </b-container>
+
+    <h3>Challenges</h3>
+    <p>
+      There were many challenges along the way. Our team was new to AR, and much time was spent fixing technical issues resulting from that.
+      Scaling in AR was especially difficult, as the game objects looked enormous in AR. Yet, scaling the objects down reduced physics stability. 
+      Rather than making the game objects smaller, the camera is actually made bigger and farther away from the content.
+      Optimizing the physics engine for the game was particularly important for our game. Each block is a rigidbody, and a single fortress has ~450 blocks.  
+      Much discussion revolved around optimizing the code architecture for easier task splitting and development, resulting in the usage of broadcasted events, singletons, and state machines.
+    </p>
 
     <h3>Tools used:</h3>
     <ul>

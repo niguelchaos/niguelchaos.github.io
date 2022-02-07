@@ -9,7 +9,7 @@ Vue.use(Router)
 const routes = [
   {
     path: '/',
-    name: 'home',
+    name: 'Home',
     component: Home
   },
   {
@@ -65,7 +65,8 @@ const routes = [
     path: '/index.html',
     redirect: '/'
   },
-  { path: '*',
+  { 
+    path: '*',
     name: 'catchAll',
     component: Home
   }

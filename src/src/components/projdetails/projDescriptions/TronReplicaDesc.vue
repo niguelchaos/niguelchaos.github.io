@@ -23,7 +23,8 @@
         </b-col>
       </b-row>
     </b-container>
-
+    
+    <h3>Challenges</h3>
     <p>
       Challenges consisted of getting walls to connect properly while changing speed, emulating grid-like movement, collision detections, and prioritizing features. 
       Details of challenges can be found in the mid-term presentation. 
@@ -71,6 +72,7 @@
     <ul>
       <li>C++</li>
       <li>SDL</li>
+      <li>Audacity</li>
       <li>Version Control - Git</li>
     </ul>
 

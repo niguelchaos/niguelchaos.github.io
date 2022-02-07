@@ -19,7 +19,7 @@
         </b-col>
 
         <b-col lg="7">
-            <!-- <b-img center :src="require(`@/assets/tron.gif`)" alt="Image" class="details-image"></b-img> -->
+
         </b-col>
       </b-row>
     </b-container>

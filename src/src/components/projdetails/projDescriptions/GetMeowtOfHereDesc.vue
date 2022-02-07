@@ -15,7 +15,58 @@
         </b-col>
 
         <b-col lg="7">
-            <!-- <b-img center :src="require(`@/assets/tron.gif`)" alt="Image" class="details-image"></b-img> -->
+
+          <!-- swiper1 -->
+          <!-- <swiper class="swiper gallery-top" :options="swiperOptionTop" ref="swiperTop">
+            <swiper-slide class="slide-1"></swiper-slide>
+            <swiper-slide class="slide-2"></swiper-slide>
+            <swiper-slide class="slide-3"></swiper-slide>
+            <div class="swiper-button-next swiper-button-white" slot="button-next"></div>
+            <div class="swiper-button-prev swiper-button-white" slot="button-prev"></div>
+          </swiper>  -->
+              <!-- swiper2 Thumbs -->
+          <!-- <swiper class="swiper gallery-thumbs" :options="swiperOptionThumbs" ref="swiperThumbs">
+            <swiper-slide class="slide-1"></swiper-slide>
+            <swiper-slide class="slide-2"></swiper-slide>
+            <swiper-slide class="slide-3"></swiper-slide>
+          </swiper> -->
+
+
+
+          <!-- <CoolLightBox 
+            :items="items" 
+            :index="index"
+            @close="index = null">
+          </CoolLightBox>
+
+          <div class="images-wrapper">
+            <div
+              class="image"
+              v-for="(image, imageIndex) in items"
+              :key="imageIndex"
+              @click="index = imageIndex"
+              :style="{ backgroundImage: 'url(' + image + ')' }"
+            ></div>
+          </div> -->
+
+          <div>
+            <b-carousel
+              id="carousel-fade"
+              style="text-shadow: 0px 0px 2px #000"
+              fade
+              controls
+              indicators
+              :interval="0"
+            >
+            <b-carousel-slide
+              v-for="image in this.images" :key="image.url"
+              caption=""
+              :img-src="image.url"
+            ></b-carousel-slide>
+            </b-carousel>
+            
+            <light-box :media="media" :showLightBox="false" :showThumbs="true"></light-box>
+          </div>
         </b-col>
       </b-row>
     </b-container>
@@ -52,7 +103,7 @@
     </p>
     <p>
       During playtests, many players did not feel like their empathy increased after playing, since puzzles were seen as too easy, resulting in a lack of player communication. 
-      We did try to prioritize the game being fun rather than raising empathy, as we thought that it was a more achievable goal. 
+      We did try to prioritize the game being fun rather than raising empathy, as we thought that it was a more achievable goal. The majority of players enjoyed the game, however, which is a good sign.
     </p>
 
       
@@ -80,6 +131,76 @@
    </div>
 </template>
 
+<script>
+  import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
+  import LightBox from 'vue-image-lightbox'
+  export default {
+    name: 'swiper-example-thumbs-gallery',
+    title: 'Thumbs gallery with Two-way control',
+
+    components: {
+      Swiper,
+      SwiperSlide,
+      LightBox
+    },
+    data() {
+      return {
+        media: [
+          { // For image
+            thumb: require('@/assets/empathuzzler.png'),
+            src: require('@/assets/empathuzzler.png'),
+            // caption: 'caption to display. receive <html> <b>tag</b>', // Optional
+            // srcset: '...' // Optional for displaying responsive images
+          },
+          {
+            thumb: require('@/assets/empathuzzler.png'),
+            src: require('@/assets/empathuzzler.png'),
+            // caption: 'caption to display. receive <html> <b>tag</b>', // Optional
+            // srcset: '...' // Optional for displaying responsive images
+          },
+        ],
+        images: [
+          { url: require('@/assets/empathuzzler.png')  },
+          // { url: require('@/assets/empathuzzler.png')  }
+        ]
+        // swiperOptionTop: {
+        //   loop: false,
+        //   loopedSlides: 5, // looped slides should be the same
+        //   spaceBetween: 10,
+        //   navigation: {
+        //     nextEl: '.swiper-button-next',
+        //     prevEl: '.swiper-button-prev'
+        //   }
+        // },
+        // swiperOptionThumbs: {
+        //   loop: false,
+        //   loopedSlides: 5, // looped slides should be the same
+        //   spaceBetween: 10,
+        //   centeredSlides: true,
+        //   slidesPerView: 'auto',
+        //   touchRatio: 0.2,
+        //   slideToClickedSlide: true
+        // },
+
+      // items: [
+
+      // ],
+      // index: null
+      }
+    },
+    mounted() {
+      // this.$nextTick(() => {
+      //   const swiperTop = this.$refs.swiperTop.$swiper
+      //   const swiperThumbs = this.$refs.swiperThumbs.$swiper
+      //   swiperTop.controller.control = swiperThumbs
+      //   swiperThumbs.controller.control = swiperTop
+      // })
+      console.log(this.$router.currentRoute.path);
+    }
+  }
+</script>
+
+
 <style scoped>
 .link-col {
   display: block;
@@ -100,4 +221,50 @@
 .description-container {
   padding-bottom: 5%;
 }
+
+/* lightbox */
+
+.images-wrapper {
+  /* height: 100px; */
+}
+.image {
+  /* min-height: 100px; */
+}
+
+/* slider */
+
+.thumb-example {
+	 height: 480px;
+	 background-color: black;
+}
+ .swiper .swiper-slide {
+	 background-size: cover;
+	 background-position: center;
+}
+ .swiper .swiper-slide.slide-1 {
+	 background-image: url('~@/assets/empathuzzler.png');
+}
+ .swiper .swiper-slide.slide-2 {
+	 background-image: url('/smugportfolio2.png');
+}
+
+ .swiper.gallery-top {
+	 height: 80%;
+	 width: 100%;
+}
+ .swiper.gallery-thumbs {
+	 height: 20%;
+	 box-sizing: border-box;
+	 padding: 0;
+}
+ .swiper.gallery-thumbs .swiper-slide {
+	 width: 25%;
+	 height: 100%;
+	 opacity: 0.4;
+}
+ .swiper.gallery-thumbs .swiper-slide-active {
+	 opacity: 1;
+}
+ 
 </style>
+
