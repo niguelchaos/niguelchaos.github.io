@@ -15,40 +15,6 @@
         </b-col>
 
         <b-col lg="7">
-
-          <!-- swiper1 -->
-          <!-- <swiper class="swiper gallery-top" :options="swiperOptionTop" ref="swiperTop">
-            <swiper-slide class="slide-1"></swiper-slide>
-            <swiper-slide class="slide-2"></swiper-slide>
-            <swiper-slide class="slide-3"></swiper-slide>
-            <div class="swiper-button-next swiper-button-white" slot="button-next"></div>
-            <div class="swiper-button-prev swiper-button-white" slot="button-prev"></div>
-          </swiper>  -->
-              <!-- swiper2 Thumbs -->
-          <!-- <swiper class="swiper gallery-thumbs" :options="swiperOptionThumbs" ref="swiperThumbs">
-            <swiper-slide class="slide-1"></swiper-slide>
-            <swiper-slide class="slide-2"></swiper-slide>
-            <swiper-slide class="slide-3"></swiper-slide>
-          </swiper> -->
-
-
-
-          <!-- <CoolLightBox 
-            :items="items" 
-            :index="index"
-            @close="index = null">
-          </CoolLightBox>
-
-          <div class="images-wrapper">
-            <div
-              class="image"
-              v-for="(image, imageIndex) in items"
-              :key="imageIndex"
-              @click="index = imageIndex"
-              :style="{ backgroundImage: 'url(' + image + ')' }"
-            ></div>
-          </div> -->
-
           <div>
             <b-carousel
               id="carousel-fade"
@@ -59,13 +25,13 @@
               :interval="0"
             >
             <b-carousel-slide
-              v-for="image in this.images" :key="image.url"
+              v-for="image in this.gameimages" :key="image.url"
               caption=""
               :img-src="image.url"
             ></b-carousel-slide>
             </b-carousel>
             
-            <light-box :media="media" :showLightBox="false" :showThumbs="true"></light-box>
+            <!-- <light-box :media="media" :showLightBox="false" :showThumbs="true"></light-box> -->
           </div>
         </b-col>
       </b-row>
@@ -77,13 +43,57 @@
     </p>
     
     <h3>Roles & Responsibilities</h3>
+
+      <h5>Designer</h5>
       <p>
-        As a programmer, I generally coded puzzle tools other level designers could use, specifically the gravity reversal mechanic.
-        As a level designer, I collaborated with others to sketch out level ideas and puzzle designs. 
+        <a :href="'https://miro.com/about/'" target="_blank">Miro</a> was used extensively to collaborate on the design of the game. 
+        Activities included selecting assets to assess the feasibility of features, affinity mapping to establish the themes of the game, discussing playtesting results, and discussing puzzle and narrative ideas. 
+        The design of the game was very much a group effort, and much discussion was needed to make compromises, establish a clearer direction, and reducing scope.
+        We wanted players to cooperate and feel empathetic towards one another, and I felt that we needed to tell a story in the game for that to happen.
+        Shown below are some of the sketches used to promote discussions of the general narrative and level design.
+      </p>
+
+      <div>
+        <b-carousel
+          id="carousel-fade"
+          style="text-shadow: 0px 0px 2px #000"
+          fade
+          controls
+          indicators
+          :interval="0"
+        >
+        <b-carousel-slide
+          v-for="image in this.processimages" :key="image.url"
+          caption=""
+          :img-src="image.url"
+        ></b-carousel-slide>
+        </b-carousel>
+        
+        <!-- <light-box :media="media" :showLightBox="false" :showThumbs="true"></light-box> -->
+      </div>
+
+      <p class="my-3">
+        Many ideas revolved around trying to tell the story through the mechanics and level design/progression.
+        Some of these ideas are shown below. Needless to say, the scope was heavily reduced, and the narrative almost non-existent.
+        However, some core concepts that many of us wanted remained: 
+        The idea of reversing gravity so that two players entered each other's world, and the two players meeting each other for only a brief moment.
+      </p>
+
+      <h5>Level Designer</h5>
+      <ul>
+        <li>Collaborated with others to sketch out level ideas and designs.</li>
+        <li>Made the loading screen. Yes I am very proud of it.</li>
+      </ul>
+      <p>
         There was much discussion surrounding how the different puzzles could help evoke empathy, taking the narrative into consideration.
         Many sketches were made to not only try to encourage the players to communicate, 
         but also fit in an in-game narrative where the cats gradually had a greater understanding of each other's "world". 
       </p>
+
+      <h5>Programmer</h5>
+      <ul>
+        <li>Coded puzzle tools, mainly the gravity reversal mechanic.</li>
+      </ul>
       
     <h3>Tools used:</h3>
     <ul>
@@ -145,57 +155,22 @@
     },
     data() {
       return {
-        media: [
-          { // For image
-            thumb: require('@/assets/empathuzzler.png'),
-            src: require('@/assets/empathuzzler.png'),
-            // caption: 'caption to display. receive <html> <b>tag</b>', // Optional
-            // srcset: '...' // Optional for displaying responsive images
-          },
-          {
-            thumb: require('@/assets/empathuzzler.png'),
-            src: require('@/assets/empathuzzler.png'),
-            // caption: 'caption to display. receive <html> <b>tag</b>', // Optional
-            // srcset: '...' // Optional for displaying responsive images
-          },
-        ],
-        images: [
+        gameimages: [
           { url: require('@/assets/empathuzzler.png')  },
-          // { url: require('@/assets/empathuzzler.png')  }
+          { url: require('@/assets/getmeowtofhere/finallevel.png')  },
+          { url: require('@/assets/getmeowtofhere/loadingscreen.png')  },
+        ],
+        processimages: [
+          { url: require('@/assets/getmeowtofhere/levelsketches.png')  },
+          { url: require('@/assets/getmeowtofhere/reducedscope.png')  },
+          { url: require('@/assets/getmeowtofhere/narrativesketches.png')  },
+          { url: require('@/assets/getmeowtofhere/teammatepuzzleideaModded.png')  },
         ]
-        // swiperOptionTop: {
-        //   loop: false,
-        //   loopedSlides: 5, // looped slides should be the same
-        //   spaceBetween: 10,
-        //   navigation: {
-        //     nextEl: '.swiper-button-next',
-        //     prevEl: '.swiper-button-prev'
-        //   }
-        // },
-        // swiperOptionThumbs: {
-        //   loop: false,
-        //   loopedSlides: 5, // looped slides should be the same
-        //   spaceBetween: 10,
-        //   centeredSlides: true,
-        //   slidesPerView: 'auto',
-        //   touchRatio: 0.2,
-        //   slideToClickedSlide: true
-        // },
 
-      // items: [
-
-      // ],
-      // index: null
       }
     },
     mounted() {
-      // this.$nextTick(() => {
-      //   const swiperTop = this.$refs.swiperTop.$swiper
-      //   const swiperThumbs = this.$refs.swiperThumbs.$swiper
-      //   swiperTop.controller.control = swiperThumbs
-      //   swiperThumbs.controller.control = swiperTop
-      // })
-      console.log(this.$router.currentRoute.path);
+      // console.log(this.$router.currentRoute.path);
     }
   }
 </script>
@@ -264,6 +239,35 @@
 }
  .swiper.gallery-thumbs .swiper-slide-active {
 	 opacity: 1;
+}
+
+/* .carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: red;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: red;
+} */
+
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%) !important;
 }
  
 </style>

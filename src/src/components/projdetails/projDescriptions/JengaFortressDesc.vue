@@ -28,30 +28,44 @@
 
     </b-container>
 
-    <h3>Challenges</h3>
-    <p>
-      There were many challenges along the way. Our team was new to AR, and much time was spent fixing technical issues resulting from that.
-      Scaling in AR was especially difficult, as the game objects looked enormous in AR. Yet, scaling the objects down reduced physics stability. 
-      Rather than making the game objects smaller, the camera is actually made bigger and farther away from the content.
-      Optimizing the physics engine for the game was particularly important for our game. Each block is a rigidbody, and a single fortress has ~450 blocks.  
-      Much discussion revolved around optimizing the code architecture for easier task splitting and development, resulting in the usage of broadcasted events, singletons, and state machines.
-    </p>
-
-    <h3>Tools used:</h3>
-    <ul>
-      <li>Unity3D - ARFoundation</li>
-      <li>C#</li>
-      <li>Version Control - Git</li>
-    </ul>
-
     <h3>Roles & Responsibilities</h3>
       <h5>Game Design</h5>
+
       <ul>
         <li>Came up with original game concept, helped finalize mechanics.</li>
         <li>Communicated concept and vision to the team, establishing a common understanding. While the concept was easier to explain, tt was a bit difficult conveying the feeling of strategy and skill I wanted the game to have.</li>
         <li>Participated in prioritizing features and reducing scope while maintaining central concept.</li>
         <li>Optimized fortress to reduce rigidbodies in mobile.</li>
       </ul>
+      <p>
+        I felt that this project allowed me to take a larger role in terms of designing the game, due to the smaller group size and general structure of the course. 
+        Team members had to pitch ideas and concepts, describing our best visions in detail, and within the group the best one was chosen. 
+        Jenga Fortress was chosen due to its perceived feasibility, extensibility, and the possible emergent gameplay resulting from it.
+      </p>
+
+      <div>
+        <b-carousel
+          id="carousel-fade"
+          style="text-shadow: 0px 0px 2px #000"
+          fade
+          controls
+          indicators
+          :interval="0"
+          v-model="carouselPics"
+        >
+        <b-carousel-slide
+          v-for="image in this.media" :key="image.url"
+          text=""
+          :img-src="image.url"
+        ></b-carousel-slide>
+        </b-carousel>
+      </div>
+
+      <p class="mt-3">
+        As the one who had the initial idea, I tried to communicate my vision of the game as clearly as possible while also taking other opinions into account.
+        Since it was a small group, simple sketches and diagrams were used instead of lengthy design documents to keep everybody on the same page.
+        As such, collaborative tools such as Google Slides were used to map game flow and code architecture to encourage discussion.
+      </p>
       
       <h5>Programmer</h5>
       <ul>
@@ -68,6 +82,23 @@
         <li>Physics Optimizations. Our game has around ~900+ rigidbodies on mobile. Pain.</li>
         <li>Early UI, for debugging and visualization purposes. We don't talk about that.</li>
       </ul>
+      
+    <h3>Challenges</h3>
+    <p>
+      There were many challenges along the way. Our team was new to AR, and much time was spent fixing technical issues resulting from that.
+      Scaling in AR was especially difficult, as the game objects looked enormous in AR. Yet, scaling the objects down reduced physics stability. 
+      Rather than making the game objects smaller, the camera is actually made bigger and farther away from the content.
+      Optimizing the physics engine for the game was particularly important for our game. Each block is a rigidbody, and a single fortress has ~450 blocks.  
+      Much discussion revolved around optimizing the code architecture for easier task splitting and development, resulting in the usage of broadcasted events, singletons, and state machines.
+    </p>
+
+    <h3>Tools used:</h3>
+    <ul>
+      <li>Unity3D - ARFoundation</li>
+      <li>C#</li>
+      <li>Version Control - Git</li>
+    </ul>
+
     <h3 class="align-center">Links</h3>
     <!-- <p>Codebase:</p> -->
     <b-row class="link-row" align-v="center">
@@ -76,6 +107,10 @@
         <a type="button" class="btn btn-outline-light btn-lg pr-3" v-bind:href="'https://github.com/niguelchaos/JengaFortress'" target="_blank">
           <em :class="'bi bi-github'" width="32" height="32" fill="currentColor" viewBox="0 0 32 32"></em>
         </a>
+      </b-col>
+
+      <b-col class="link-item">
+        <b-button class="link-button" href="./ProjectDocuments/JengaFortressPitches.pdf" target="_blank"><strong>Read Initial Pitches</strong></b-button>
       </b-col>
 
       <b-col class="link-item">
@@ -95,6 +130,26 @@
     
    </div>
 </template>
+
+<script>
+  import LightBox from 'vue-image-lightbox'
+  export default {
+    components: {
+    },
+    data() {
+      return {
+        media: [
+          { url: require('@/assets/jengafortress/initialJengFortSketchModded.png'), caption: ""  },
+          { url: require('@/assets/jengafortress/Gameflow.png'), caption: "Establishing  the general game flow helped create the states in the code."   },
+          { url: require('@/assets/jengafortress/Architecture.png'), caption: "The code architecture helped split work and went through several iterations."   },
+        ]
+      }
+    },
+    mounted() {
+      // console.log(this.$router.currentRoute.path);
+    }
+  }
+</script>
 
 <style scoped>
 .link-row {
@@ -139,5 +194,29 @@
       width: 100%;
       height: 100%;
    }
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: red;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: red;
 }
 </style>

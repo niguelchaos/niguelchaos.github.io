@@ -18,15 +18,16 @@
 <script>
 import SkillCard from '@/components/cards/SkillCard.vue'
 export default {
-   components: {  SkillCard   },
+   components: {  SkillCard  },
    name: 'skills-section',
    data() {
       return {
          skills: [
-            { id: 3, title: 'Full Stack Developer', text: 'Experience in Web, Desktop, Distributed and Embedded Systems. Increasing hatred for Web Development every passing moment though.' },
-            { id: 2, title: 'Software Design', text: 'Experienced in designing software to be maintainable and readable.' },
-            { id: 1, title: 'Gameplay Design', text: 'Able to analyze, criticize, and investigate how mechanics function together. Somewhat painful.' },
-            { id: 0, title: 'Game Programming', text: 'Adequate scripting capabilities in C# and C++.' }
+            { id: 4, title: 'Game Design', text: 'Able to communicate ideas and vision, document game elements, and work in different domains such as programming and art.' },
+            { id: 3, title: 'Gameplay Analysis', text: 'Able to analyze, criticize, and investigate how games function as systems, amongst other relevant concepts. Somewhat painful.' },
+            { id: 2, title: 'Game Development', text: 'Adequate scripting capabilities in C# and C++. I think I know enough to know I am terrible at it.' },
+            { id: 1, title: 'Software Engineering', text: 'Experience in analyzing requirements and developing software for Web, Desktop, and Embedded Systems. Increasing hatred for Web Development every passing moment though.' },
+            { id: 0, title: 'Software Design', text: 'Experience in designing software according to customer needs.' }
          ],
       }
    }
@@ -37,6 +38,7 @@ export default {
 .skills-header {
   font-weight: bold;
   font-size: 3.2rem;
+  color: #d8dcff;
 }
 .skills-header-col {
   margin-left: 15%;

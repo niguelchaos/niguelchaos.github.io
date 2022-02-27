@@ -64,7 +64,7 @@ export default {
       ],
       gamedevProjects: [
         { num: 5, course: 'Experimental Game Design (Group Project)', title: 'Jenga Fortress', text: 'AR game where you explode fortresses made out of wooden blocks.', 
-            highlightTitle:"Highlights", tech: 'Mobile AR Limitations, Game Design', roles:'Game Design, Programming', link: 'https://github.com/niguelchaos/JengaFortress', imgsrc: '', detailslink: "/jengafortress" },
+            highlightTitle:"Highlights", tech: 'Mobile AR Limitations, Game Design', roles:'Game Design, Programming', link: 'https://github.com/niguelchaos/JengaFortress', imgsrc: 'https://www.youtube.com/embed/l_vUDjO9Uzw', detailslink: "/jengafortress" },
         { num: 4, course: 'Game Engine Architecture', title: 'Tron(1982) Replica', text: 'Partial recreation of the light cycle minigame from Bally Midway\'s Tron, with a focus on architectural decisions. Due to time constraints, local multiplayer was implemented instead.', 
             highlightTitle:"Nightmare Fuel", tech: 'C++, SDL, Architectural Design', roles:'Design, Programming', link: 'https://github.com/niguelchaos/GEATron', imgsrc: 'tron.gif', detailslink: "/tronreplica" },
         { num: 3, course: 'Game Development (Group) Project', title: 'Get Meowt of Here', text: 'A local 2-player puzzler designed to elicit empathy between the players by highlighting the importance of diversity. Featuring 2 controllable cats within their own "world", players had to solve puzzles together to progress.', 
@@ -75,9 +75,11 @@ export default {
             highlightTitle:"Highlights of Pain", tech: 'VR Level Design, Oculus Quest, Development Contingency Plans', roles:'Game & Level Design, Programming, Sound', link: 'https://github.com/niguelchaos/FeelTheDisaster', imgsrc: 'feelthedisaster.png', detailslink: "/feelthedisaster" },
         // { num: 1, course: 'Gameplay Design', title: 'Touching Hearts (Board Game)', text: 'Group project with a focus on prototyping and reflecting on design decisions. The 4 player card game had a dark but humourous theme, involving harvesting and trading organs to achieve their individual goals.', tech: 'Tabletopia (Website)', roles:'Design, Prototyping', link: '', imgsrc: 'touchinghearts.png', detailslink: "/touchinghearts" },
         { num: 0, course: 'Product Service System Design', title: 'The Biggest Brain', text: 'A simple 2-player button masher. Created using the frustratingly buggy Gameblox editor. My first game ever made. Surprisingly fun for the first 30 seconds.', 
-            highlightTitle:"Inspiration", tech: 'Galaxy Brain meme', roles:'Design, Programming, Art', link: 'https://gameblox.org/play/23256/', imgsrc: 'thebiggestbrain.png', detailslink: "" }
+            highlightTitle:"Inspiration", tech: 'Galaxy Brain meme', roles:'Design, Programming, Art', link: 'https://gameblox.org/play/23256/', imgsrc: 'biggestbrain/biggestbrainp2.png', detailslink: "" }
       ],
       miscProjects: [
+        { num: 1, course: 'Interactive Storytelling', title: 'The Sapling', text: 'An animated short about a sapling finding happiness around it. The entire team never used Blender before this course. I designed the environment, modelled the trees, and animated the lighting, trees, and camera from 2:50 until the end.', 
+            highlightTitle:"Highlights", tech: 'Blender, Shaders, Working with 5 fps viewports', roles:'Sound Drafting, Shaders, Modelling, Animation, Cinematography', link: '', imgsrc: 'https://www.youtube.com/embed/DFPqqOFhVUo', detailslink: "" },
         { num: 0, course: 'Expression with 2D Animation 1', title: 'Original Character Animation', text: 'Unity integration of an original character\'s animation I created, focusing on the quality of character dynamics following the 12 Principles of Animation in order to convey personality through animation.', 
             highlightTitle:"Highlights", tech: 'Krita, Understanding Animation', roles:'Character Design & Animation, Programming, Background Art', link: 'https://github.com/niguelchaos/RaphlUnityIntegration', imgsrc: 'raphlanim.gif', detailslink: "/raphlanim" }
       ]

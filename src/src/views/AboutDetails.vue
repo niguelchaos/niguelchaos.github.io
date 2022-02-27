@@ -29,7 +29,7 @@
         <b-row>
           <b-col class="float-left">
             <b-container class="games-list">
-              <h4>Games That Tickle my Fancy</h4>
+              <h4>Games That Make Me Intrigued</h4>
               <p>Updated whenever more come to mind.</p>
               <ul>
                 <li><strong>Beat Saber</strong>: My arms dead</li>
@@ -84,9 +84,9 @@
         </b-row>
       </b-container>
 
-      <b-container class="details-item">
+      <!-- <b-container class="details-item">
         <skills></skills>
-      </b-container>
+      </b-container> -->
 
 
 

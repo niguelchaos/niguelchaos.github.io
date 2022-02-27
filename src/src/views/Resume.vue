@@ -47,7 +47,9 @@
 
     </b-container>
 
-
+    <b-container class="details-item">
+      <skills></skills>
+    </b-container>
 
   </b-container>
 </template>
@@ -55,10 +57,12 @@
 <script>
 import NameHeader from '@/components/NameHeader.vue';
 import EducationCard from '@/components/aboutdetails/Education.vue';
+import Skills from '@/components/Skills.vue';
+
 
 export default {
   // name: "resume",
-  components: { NameHeader, EducationCard },
+  components: { NameHeader, EducationCard, Skills },
   data() {
       return {
       }

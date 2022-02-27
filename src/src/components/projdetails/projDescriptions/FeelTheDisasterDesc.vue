@@ -17,22 +17,40 @@
             As my first Unity game, I thought it would be "pretty funny" if I could pull off a Virtual Reality game, as it sounded ridiculous even to myself - 
             especially since it was a 20% workload course and I only had a month of development time.
           </p>
-          <p>
-            I quickly learned the limitations of both myself and the Quest. With the Quest unable to simulate fire spreading at an acceptable frame rate, my original idea quickly looked infeasible.
-            With 3 weeks left, I decided to take an "easier" theme - recycling. 
-            Yet, I wanted a game that went beyond sorting garbage, and instead tried to look for interesting facts that could be included in the game.
-            I finally settled on "what happens after trash is sorted" - though that clearly did not go so well.
-          </p>
-          
 
         </b-col>
 
         <b-col lg="7">
-            <!-- <b-img center :src="require(`@/assets/tron.gif`)" alt="Image" class="details-image"></b-img> -->
+          <div>
+            <b-carousel
+              id="carousel-fade"
+              style="text-shadow: 0px 0px 2px #000"
+              fade
+              controls
+              indicators
+              :interval="0"
+            >
+            <b-carousel-slide
+              v-for="image in this.media" :key="image.url"
+              caption=""
+              :img-src="image.url"
+            ></b-carousel-slide>
+            </b-carousel>
+
+          </div>
         </b-col>
       </b-row>
+
+      <p class="mt-3">
+        I quickly learned the limitations of both myself and the Quest. With the Quest unable to simulate fire spreading at an acceptable frame rate, my original idea quickly looked infeasible.
+        With 3 weeks left, I decided to take an "easier" theme - recycling. 
+        Yet, I wanted a game that went beyond sorting garbage, and instead tried to look for interesting facts that could be included in the game.
+        I finally settled on "what happens after trash is sorted" - though that clearly did not go so well.
+      </p>
     </b-container>
     
+
+
     <h3>Concept</h3>
     <p>
       Recycle the milk carton correctly, preventing the enemy robot from burning the carton, and burn garbage unfit for recycling in a recycling facility! 
@@ -146,6 +164,38 @@
     
    </div>
 </template>
+
+<script>
+  import LightBox from 'vue-image-lightbox'
+  export default {
+    components: {
+    },
+    data() {
+      return {
+        media: [
+          { url: require('@/assets/feelTheDisasterMedia/tutfrontoverview.png')  },
+          { url: require('@/assets/feelTheDisasterMedia/tutCloseupTable.png')  },
+          { url: require('@/assets/feelTheDisasterMedia/tutwashedmilk.png')  },
+          { url: require('@/assets/feelTheDisasterMedia/tutsideview.png')  },
+          { url: require('@/assets/feelTheDisasterMedia/tutcapremove.png')  },
+
+          { url: require('@/assets/feelTheDisasterMedia/recycleentrycorridor.png')  },
+          { url: require('@/assets/feelTheDisasterMedia/recyclecenter.png')  },
+          { url: require('@/assets/feelTheDisasterMedia/robotpunch.png')  },
+          { url: require('@/assets/feelTheDisasterMedia/lightdimwhenpunched.png')  },
+          { url: require('@/assets/feelTheDisasterMedia/robotthrowloss.png')  },
+
+          { url: require('@/assets/feelTheDisasterMedia/burnoverview.png')  },
+          { url: require('@/assets/feelTheDisasterMedia/burntext.png')  },
+          { url: require('@/assets/feelTheDisasterMedia/winoverview.png')  },
+        ]
+      }
+    },
+    mounted() {
+      // console.log(this.$router.currentRoute.path);
+    }
+  }
+</script>
 
 <style scoped>
 .link-col {

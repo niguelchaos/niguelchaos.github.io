@@ -4,18 +4,18 @@
       <b-row no-gutters>
 
          <b-col v-if="project.num % 2 > 0" class="card-img-col" lg="5">
-            <b-card-img v-if="project.imgsrc != ''" :src="require(`@/assets/${project.imgsrc}`)" alt="Image" class="card-image"></b-card-img>
+            <b-card-img v-if="!this.isYoutubeLink" :src="require(`@/assets/${project.imgsrc}`)" alt="Image" class="card-image"></b-card-img>
             <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/l_vUDjO9Uzw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-            <div v-if="project.title == 'Jenga Fortress'" class="jenga-vid">
-               <iframe width="560" height="315" src="https://www.youtube.com/embed/l_vUDjO9Uzw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div v-if="this.isYoutubeLink" class="yt-vid">
+               <iframe width="560" height="315" :src="project.imgsrc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
          </b-col>
 
          <!-- hide on lg and wider screens -->
          <b-col v-if="project.num % 2 == 0" class="card-img-col d-lg-none" lg="5">
-            <b-card-img v-if="project.imgsrc != ''" :src="require(`@/assets/${project.imgsrc}`)" alt="Image" class="card-image"></b-card-img>
-            <div v-if="project.title == 'Jenga Fortress'" class="jenga-vid">
-               <iframe  width="560" height="315" src="https://www.youtube.com/embed/l_vUDjO9Uzw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <b-card-img v-if="!this.isYoutubeLink" :src="require(`@/assets/${project.imgsrc}`)" alt="Image" class="card-image"></b-card-img>
+            <div v-if="this.isYoutubeLink" class="yt-vid">
+               <iframe  width="560" height="315" :src="project.imgsrc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
          </b-col>
 
@@ -64,9 +64,10 @@
 
          <!-- hide on screens smaller than lg -->
          <b-col v-if="project.num % 2 == 0" class="card-img-col d-none d-lg-block" lg="5">
-            <b-card-img v-if="project.imgsrc != ''" :src="require(`@/assets/${project.imgsrc}`)" alt="Image" class="card-image"></b-card-img>
-            <div v-if="project.title == 'Jenga Fortress'" class="jenga-vid">
-               <iframe width="560" height="315" src="https://www.youtube.com/embed/l_vUDjO9Uzw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <b-card-img v-if="!this.isYoutubeLink" :src="require(`@/assets/${project.imgsrc}`)" alt="Image" class="card-image"></b-card-img>
+            
+            <div v-if="this.isYoutubeLink" class="yt-vid">
+               <iframe width="560" height="315" :src="project.imgsrc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
          </b-col>
 
@@ -84,13 +85,15 @@ export default {
       fadeStyle: '',
       showLink: true,
       linkClass: 'bi bi-github',
-      showDetailsLink: true 
+      showDetailsLink: true,
+      isYoutubeLink: false,
     }
   },
   mounted() {
     this.getFadeInStyle(this.project.num)
     this.checkLink(this.project.link)
     this.checkDetails(this.project.detailslink)
+    this.checkImage(this.project.imgsrc)
   },
   methods: {
 
@@ -111,6 +114,16 @@ export default {
       } else {
         this.showLink = true
         this.linkClass = 'bi bi-box-arrow-up-right'
+      }
+    },
+
+    checkImage(projectImage) {
+      const youtubeSubstr = 'youtube.com'
+      if (this.project.imgsrc.includes(youtubeSubstr)) {
+         this.isYoutubeLink = true;
+      }
+      else {
+         this.isYoutubeLink = false;
       }
     },
     
@@ -172,14 +185,14 @@ export default {
       text-align: center;
       margin-top: 1.5rem;
    }
-   .jenga-vid {
+   .yt-vid {
       /* height: 0px; */
       /* padding-top: 25px; */
       /* padding-bottom: 56.2%; */
       max-width: 300px;
       position: relative;
    }
-   .jenga-vid iframe {
+   .yt-vid iframe {
       width: 100%;
       height: 100%;
    }
@@ -188,14 +201,14 @@ export default {
    }
 }
 
-.jenga-vid {
+.yt-vid {
    position: relative;
    height: 0;
    padding-bottom: 56.25%;
    padding-right: 100%;
    /* padding-left: 0; */
 }
-.jenga-vid iframe {
+.yt-vid iframe {
    position: absolute;
    top:0;
    bottom: 0;
