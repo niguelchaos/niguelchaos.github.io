@@ -3,7 +3,7 @@
     <b-row>
       <b-col id="content-col" class="content-col" no-gutters>
         <b-container fluid class="home-section" id="home">
-          <b-jumbotron class="home-jumbo" id="home-jumbo" header="Nigel Chao" lead="Software Developer, Game Designer" fluid>
+          <b-jumbotron class="home-jumbo" id="home-jumbo" header="Nigel Chao" lead="Software Engineer, Game Developer" fluid>
           </b-jumbotron>
         </b-container>
         <!-- Mobile (< 768px): stack columns by making one half-width and one full-width

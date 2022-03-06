@@ -2,7 +2,7 @@
   <b-container class="name-heading">
     <b-jumbotron class="name-jumbo" id="name-jumbo">
       <h1 class="name-header">Nigel Chao</h1>
-      <h5 class="name-lead">Software Developer, Game Designer</h5>
+      <h5 class="name-lead">Software Engineer, Game Developer</h5>
       <hr id=name-divider class="divider my-3" />
     </b-jumbotron>
   </b-container>

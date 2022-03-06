@@ -31,7 +31,7 @@ export default {
   data() {
     return {
       about: {
-        text1: 'I am a Master\'s student in Game Design and Technology at Gothenburg University, with a Bachelor\'s in Software Engineering and Management. I am currently looking for opportunities to deepen my knowledge of Game Development.',
+        text1: 'I am a Master\'s student in Game Design and Technology at Gothenburg University, with a Bachelor\'s in Software Engineering and Management. I am currently looking for opportunities to deepen my knowledge of Game Design and Development.',
         text2: 'Oh, and rhythm games. Those are nice.'
       },
       education: [

@@ -60,6 +60,11 @@ const routes = [
     name: 'RaphlAnim',
     component: () => import('./views/projViews/RaphlAnim.vue')
   },
+  {
+    path: '/dummypark',
+    name: 'DummyPark',
+    component: () => import('./views/projViews/DummyPark.vue')
+  },
   
   {
     path: '/index.html',

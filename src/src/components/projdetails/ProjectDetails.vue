@@ -24,6 +24,7 @@ import GetMeowtOfHereDesc from './projDescriptions/GetMeowtOfHereDesc.vue';
 import TronReplicaDesc from './projDescriptions/TronReplicaDesc.vue';
 import JengaFortressDesc from './projDescriptions/JengaFortressDesc.vue';
 import RaphlAnimDesc from './projDescriptions/RaphlAnimDesc.vue';
+import DummyParkDesc from './projDescriptions/DummyParkDesc.vue';
 
 export default {
 	props: ['projectDetails'],
@@ -35,7 +36,8 @@ export default {
       GetMeowtOfHereDesc,
       TronReplicaDesc,
       JengaFortressDesc,
-      RaphlAnimDesc
+      RaphlAnimDesc,
+      DummyParkDesc
     },
     methods: {
 
