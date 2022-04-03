@@ -10,7 +10,7 @@
       </b-container>
 
       <b-container class="details-item">
-        <h4>What am I Doing with my Life</h4>
+        <h4>I Hope You Have Fun Reading This</h4>
         <p class="text-left">
           Born in Macau, my formative years were spent trying to not disappoint my parents, and without a single doubt ultimately failing to do so.
           As a child, I don't think I had high aspirations or dreams - other than spending as much time as possible playing games.
@@ -69,7 +69,7 @@
           <b-col class="float-left">
             <b-container class="games-list">
               <h4>Important Videos</h4>
-              <p>Completely irrelevant to game or software development.</p>
+              <p>Completely irrelevant to game or software development. However, I consider all to have good storytelling.</p>
               <ul>
                 <li><a :href="'https://www.youtube.com/watch?v=gM-_Jt0m6eY'" target="_blank"><strong>Feelin Kinda Panzer</strong></a></li>
                 <li><a :href="'https://www.youtube.com/watch?v=JNpd1WjFkUk'" target="_blank"><strong>C H E S S - P A W N - R E Q U I E M</strong></a></li>

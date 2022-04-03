@@ -33,7 +33,7 @@ export default {
   justify-content: center;
   overflow: hidden;
   min-height: 100vh;
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
   /* background-color: #f3e0ff; */
   /* background-color: #5C6299; */
   background-color: #2d3142;

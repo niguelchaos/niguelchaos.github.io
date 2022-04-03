@@ -1,5 +1,5 @@
 <template>
-  <b-container>
+  <b-container id="resume">
     <name-header></name-header>
 
     <b-container class="details">
@@ -13,7 +13,7 @@
         <b-row>
           <b-col class="link-col">
             <a class="link-item float-center">
-              <b-button class="link-button cv-button" href="./Resume_GameDesign.pdf" target="_blank"><strong>Download CV (PDF)</strong></b-button>
+              <b-button class="link-button cv-button" href="./NigelChao_Resume.pdf" target="_blank"><strong>Download CV (PDF)</strong></b-button>
             </a>
           </b-col>
         </b-row>

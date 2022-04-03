@@ -132,7 +132,7 @@
 </template>
 
 <script>
-  import LightBox from 'vue-image-lightbox'
+  // import LightBox from 'vue-image-lightbox'
   export default {
     components: {
     },

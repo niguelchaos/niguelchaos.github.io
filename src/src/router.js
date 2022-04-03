@@ -10,12 +10,12 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: () => import('./views/Home.vue')
   },
   {
     path: '/resume',
     name: 'Resume',
-    component: Resume
+    component: () => import('./views/Resume.vue')
   },
   {
     path: '/about',
@@ -77,8 +77,10 @@ const routes = [
   }
 ]
 
-export default new Router({
+const router = new Router({
   mode: 'history',
   base: process.env.BASE_URL,
   routes
 })
+
+export default router

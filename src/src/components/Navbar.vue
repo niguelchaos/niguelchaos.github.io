@@ -5,9 +5,9 @@
          <b-navbar-nav class="navbar-nav mx-auto"  fill:true>
             <b-nav id="navpills" pills align="center">
                <b-nav-item  id="navtext" href="./#home" >Home</b-nav-item>
-               <b-nav-item  id="navtext" href="./#about">About</b-nav-item>
                <b-nav-item id="navtext" href="./#projects">Projects</b-nav-item>
                <b-nav-item id="navtext" href="./#contact">Contact</b-nav-item>
+               <b-nav-item  id="navtext" href="./about">About</b-nav-item>
                <b-nav-item id="navtext" to="/resume">Resume</b-nav-item>
             </b-nav>
          </b-navbar-nav>

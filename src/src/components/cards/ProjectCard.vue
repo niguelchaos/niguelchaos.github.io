@@ -1,5 +1,6 @@
 <template>
-  <div :data-aos="fadeStyle" data-aos-duration="100" data-aos-easing="ease-out-sine">
+  <!-- <div :data-aos="fadeStyle" data-aos-duration="100" data-aos-easing="ease-out-sine"> -->
+  <div>
    <b-card class="proj-card overflow-hidden shadow-sm">
       <b-row no-gutters>
 

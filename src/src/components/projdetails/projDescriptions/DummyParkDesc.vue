@@ -146,16 +146,16 @@
 </template>
 
 <script>
-  import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
-  import LightBox from 'vue-image-lightbox'
+  // import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
+  // import LightBox from 'vue-image-lightbox'
   export default {
-    name: 'swiper-example-thumbs-gallery',
-    title: 'Thumbs gallery with Two-way control',
+    // name: 'swiper-example-thumbs-gallery',
+    // title: 'Thumbs gallery with Two-way control',
 
     components: {
-      Swiper,
-      SwiperSlide,
-      LightBox
+      // Swiper,
+      // SwiperSlide,
+      // LightBox
     },
     data() {
       return {
