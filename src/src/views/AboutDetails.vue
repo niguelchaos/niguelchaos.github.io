@@ -18,8 +18,8 @@
         <hr id=about-divider class="divider my-3" />
         <p class="text-left">
           Moving to Sweden in 2014, my experiences have shown me that there is always someone better than you, some things aren't what they seem on the inside, and grades don't really have any meaning.
-          I wanted to make games because I didn't want the consequences of my actions to affect the world in the same way software in hospitals and stuff does, 
-          but we both know thats wrong because media always influence people. I guess games are as dangerous as malfunctioning hospital software.
+          I wanted to make games because I didn't want the consequences of my actions to affect the world in the same way software in hospitals and mission critical software do, 
+          but we both know thats wrong because media always influence people. I guess games are just as dangerous as malfunctioning hospital software.
         </p>
         <hr id=about-divider class="divider my-3" />
       </b-container>
