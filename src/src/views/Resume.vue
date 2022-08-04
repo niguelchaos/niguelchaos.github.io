@@ -20,7 +20,7 @@
       </b-container>
       
 
-      <b-container class="details-item">
+      <!-- <b-container class="details-item">
         <h4>Academic Reports</h4>
         <p>
           A myriad of reports which give me PTSD or I simply like. Or both.
@@ -41,7 +41,7 @@
             </a>
           </b-col>
         </b-row>
-      </b-container>
+      </b-container> -->
 
       <education-card></education-card>
 

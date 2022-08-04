@@ -123,24 +123,19 @@ export default {
   /* width: auto; */
 }
 
-@media (max-width: 430px) {
-  .container {
-    padding: 0;
-  }
-  .projects-section { 
-    padding: 0;
-    margin: 0;
-  }
-
-}
-
-@media (max-width: 430px) {
+/* @media (max-width: 430px) {
   .projects-section {
     padding-right: 0%;
     padding-left: 0%;
+    padding: 0;
+    margin: 0;
   }
-}
+} */
+
 .proj-main-col {
-  padding: 1.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
 }
 </style>
