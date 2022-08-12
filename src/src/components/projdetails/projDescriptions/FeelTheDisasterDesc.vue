@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <b-container>
 
     <b-container class="description-container">
       <b-row>
@@ -139,34 +139,11 @@
       <li>VRTK</li>
     </ul>
 
-      
-    <h3 class="align-center">Links</h3>
-    <b-container>
-    <b-row>
-      <b-col class="link-col">
-
-        <a class="link-item float-left">
-          <a type="button" class="btn btn-outline-light btn-lg pr-3" v-bind:href="'https://github.com/niguelchaos/FeelTheDisaster'" target="_blank">
-            <em :class="'bi bi-github'" width="32" height="32" fill="currentColor" viewBox="0 0 32 32"></em>
-          </a>
-        </a>
-        
-        <a class="link-item">
-          <b-button class="link-button" href="./ProjectDocuments/FeelTheDisasterdarkplain.pdf" target="_blank"><strong>Final Presentation Poster</strong></b-button>
-        </a>
-        <!-- <a class="link-item float-left">
-          <b-button class="link-button" href="./ProjectDocuments/GEATronReport.pdf" target="_blank"><strong>Read Tron Report</strong></b-button>
-        </a> -->
-        
-      </b-col>
-    </b-row>
-    </b-container>
     
-   </div>
+   </b-container>
 </template>
 
 <script>
-  // import LightBox from 'vue-image-lightbox'
   export default {
     components: {
     },
@@ -204,7 +181,8 @@
   justify-content: center;
 }
 .link-button {
-  background-color: #5C6299;
+  background-color: #5c629900;
+  border-color: #B298DC;
 }
 .link-item {
   margin-right: 1rem;

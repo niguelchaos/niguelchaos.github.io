@@ -15,6 +15,13 @@ export default {
           subtitle: "Physics-based Local Multiplayer AR Duel",
           mainImage: {name: "", index: 0},
           images: [],
+          links: [
+            {title:"", url: 'https://github.com/niguelchaos/JengaFortress'},
+            {title:"Initial Pitches", url: './ProjectDocuments/JengaFortressPitches.pdf'},
+            {title:"Game Report", url: './ProjectDocuments/JengaFortressReport.pdf'},
+            {title:"Mid-term Presentation", url: './ProjectDocuments/JengaFortressMidPresentation.pdf'},
+            {title:"Download JengFort.apk", url: './ProjectDocuments/JengFort.apk'},
+          ],
           descriptionComponent: "jenga-fortress-desc"
       }
     }

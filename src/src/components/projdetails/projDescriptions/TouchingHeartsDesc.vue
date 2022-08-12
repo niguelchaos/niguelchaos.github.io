@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <b-container>
      
      <b-container class="description-container">
       <b-row>
@@ -60,37 +60,15 @@
     </p>
 
 
-      
-    <h3 class="align-center">Links</h3>
-    <b-container>
-    <b-row>
-      <b-col class="link-col">
-
-        <a class="link-item">
-          <b-button class="link-button" href="./ProjectDocuments/TouchingHeartsPp.pdf" target="_blank"><strong>Final Presentation Slides</strong></b-button>
-        </a>
-
-      
-        
-      </b-col>
-    </b-row>
-    </b-container>
-
-
-   </div>
+  </b-container>
 </template>
 
 <script>
-  // import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
-  // import LightBox from 'vue-image-lightbox'
   export default {
-    // name: 'swiper-example-thumbs-gallery',
-    // title: 'Thumbs gallery with Two-way control',
+
 
     components: {
-      // Swiper,
-      // SwiperSlide,
-      // LightBox
+ 
     },
     data() {
       return {
@@ -124,7 +102,8 @@
   justify-content: center;
 }
 .link-button {
-  background-color: #5C6299;
+  background-color: #5c629900;
+  border-color: #B298DC;
 }
 .link-item {
   margin-right: 1rem;

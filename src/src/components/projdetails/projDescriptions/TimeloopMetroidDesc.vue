@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <b-container>
 
      <b-container class="description-container">
       <b-row>
@@ -65,17 +65,6 @@
       <li>PlasticSCM</li>
     </ul>
 
-      
-    <!-- <h3 class="align-center">Links</h3> -->
-    <!-- <b-container>
-    <b-row>
-      <b-col class="link-col">
-        
-      </b-col>
-    </b-row>
-    </b-container> -->
-
-
      
-   </div>
+  </b-container>
 </template>

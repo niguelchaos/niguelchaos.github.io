@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <b-container>
 
     <b-container class="description-container">
       <b-row>
@@ -77,7 +77,7 @@
     </ul>
 
       
-    <h3 class="align-center">Links</h3>
+    <!-- <h3 class="align-center">Links</h3>
     <b-container>
     <b-row>
       <b-col class="link-col">
@@ -100,11 +100,11 @@
         </a>
       </b-col>
     </b-row>
-    </b-container>
+    </b-container> -->
     
     <!-- <br> <a href="./JengaFortressReport.pdf" target="_blank"><strong>Report</strong></a> -->
     
-   </div>
+   </b-container>
 </template>
 
 <style scoped>
@@ -114,7 +114,8 @@
   justify-content: center;
 }
 .link-button {
-  background-color: #5C6299;
+  background-color: #5c629900;
+  border-color: #B298DC;
 }
 .link-item {
   margin-right: 1rem;

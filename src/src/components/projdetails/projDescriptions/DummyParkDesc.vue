@@ -1,6 +1,5 @@
 <template>
-  <div>
-
+  <b-container>
      
      <b-container class="description-container">
       <b-row>
@@ -58,24 +57,6 @@
           <li>Created mock-ups for user stories of the current and next sprint.</li>
         </ul>
 
-      <!-- <div>
-        <b-carousel
-          id="carousel-fade"
-          style="text-shadow: 0px 0px 2px #000"
-          fade
-          controls
-          indicators
-          :interval="0"
-        >
-        <b-carousel-slide
-          v-for="image in this.processimages" :key="image.url"
-          caption=""
-          :img-src="image.url"
-        ></b-carousel-slide>
-        </b-carousel>
-        
-      </div> -->
-
       <h5>Developer</h5>
       <ul>
         <li>Drove the development of crucial features, namely the Activities user story.</li>
@@ -116,33 +97,7 @@
       As we also decided on role rotations, different members gradually gained different competencies. As the app became more complex, onboarding took longer as well.   
     </p>
 
-
-      
-    <h3 class="align-center">Links</h3>
-    <b-container>
-    <b-row>
-      <b-col class="link-col">
-
-        <a class="link-item float-left">
-          <a type="button" class="btn btn-outline-light btn-lg float-left pr-3" v-bind:href="'https://github.com/niguelchaos/dit192-team-4-visitor-app-fork'" target="_blank">
-            <em :class="'bi bi-github'" width="32" height="32" fill="currentColor" viewBox="0 0 32 32"></em>
-          </a>
-        </a>
-
-        <a class="link-item">
-          <b-button class="link-button" href="./ProjectDocuments/Dummypark_Final_Presentation.pdf" target="_blank"><strong>Final Presentation Slides</strong></b-button>
-        </a>
-        <a class="link-item">
-          <b-button class="link-button" href="./ProjectDocuments/Dummypark_Postmortem.pdf" target="_blank"><strong>Read Final Report</strong></b-button>
-        </a>
-      
-        
-      </b-col>
-    </b-row>
-    </b-container>
-
-
-   </div>
+   </b-container>
 </template>
 
 <script>
@@ -189,7 +144,8 @@
   justify-content: center;
 }
 .link-button {
-  background-color: #5C6299;
+  background-color: #5c629900;
+  border-color: #B298DC;
 }
 .link-item {
   margin-right: 1rem;
@@ -203,54 +159,5 @@
   padding-bottom: 5%;
 }
 
-/* lightbox */
-
-.images-wrapper {
-  /* height: 100px; */
-}
-.image {
-  /* min-height: 100px; */
-}
-
-/* slider */
-
-/* .thumb-example {
-	 height: 480px;
-	 background-color: black;
-}
- .swiper .swiper-slide {
-	 background-size: cover;
-	 background-position: center;
-}
- .swiper .swiper-slide.slide-1 {
-	 background-image: url('~@/assets/empathuzzler.png');
-}
- .swiper .swiper-slide.slide-2 {
-	 background-image: url('/smugportfolio2.png');
-}
-
- .swiper.gallery-top {
-	 height: 80%;
-	 width: 100%;
-}
- .swiper.gallery-thumbs {
-	 height: 20%;
-	 box-sizing: border-box;
-	 padding: 0;
-}
- .swiper.gallery-thumbs .swiper-slide {
-	 width: 25%;
-	 height: 100%;
-	 opacity: 0.4;
-}
- .swiper.gallery-thumbs .swiper-slide-active {
-	 opacity: 1;
-} */
-
-/* .carousel-control-next,
-.carousel-control-prev {
-    filter: invert(100%) !important;
-} */
- 
 </style>
 

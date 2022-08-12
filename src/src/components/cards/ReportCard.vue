@@ -28,16 +28,13 @@
                     </b-col> 
                   </b-row>
                   
-                  <b-row class="linkbutton-row" align-v="baseline">
-                     <b-col class="linkbutton-col">
-                        <!-- <a v-if="this.showLink" type="button" class="linkbutton btn btn-outline-light btn-lg float-right" v-bind:href="report.link" target="_blank">
-                           <em :class="this.linkClass" width="32" height="32" fill="currentColor" viewBox="0 0 32 32"></em>
-                        </a> -->
-                        <!-- <b-button v-if="this.showDetailsLink" class="details-button float-left" variant="outline" :to="`${report.detailslink}`"><strong>More Details</strong></b-button> -->
+                  <b-row v-if="this.showLinks" class="linkbutton-row" align-v="baseline">
+                     <b-col v-for="doc in report.docs" :key="doc.id" class="linkbutton-col">
+                        
+                        <b-button class="link-button " v-bind:href="doc.link" target="_blank">
+                           <strong>{{doc.title}}</strong>
+                        </b-button>
 
-                        <!-- <a v-if="this.showDetailsLink" class="details-link float-left">
-                           <router-link :to="`${project.detailslink}`"><strong>More Details</strong></router-link>
-                        </a> -->
                      </b-col>
                   </b-row>
 
@@ -57,59 +54,22 @@ export default {
   data() {
     return {
       fadeStyle: '',
-      showLink: true,
-      linkClass: 'bi bi-github',
-      showDetailsLink: true,
-      isYoutubeLink: false,
+      showLinks: true,
     }
   },
   mounted() {
-    // this.getFadeInStyle(this.report.num)
     this.checkLink(this.report.link)
-    this.checkDetails(this.report.detailslink)
-    this.checkImage(this.report.imgsrc)
   },
   methods: {
 
-    // getFadeInStyle(reportnum) {
-    //   this.fadeStyle = 'fade-up-left'
-    //   if (this.report.num % 2 !== 0) {
-    //     this.fadeStyle = 'fade-up-right'
-    //   }
-    // },
-
     checkLink(reportlink) {
-      const githubSubstr = 'github.com'
-      if (this.report.link === '') {
-        this.showLink = false
-      } else if (this.report.link.includes(githubSubstr)) {
-        this.showLink = true
-        this.linkClass = 'bi bi-github'
+      // const githubSubstr = 'github.com'
+      if (this.report.docs === []) {
+        this.showLinks = false
       } else {
-        this.showLink = true
-        this.linkClass = 'bi bi-box-arrow-up-right'
+        this.showLinks = true
       }
     },
-
-    checkImage(reportImage) {
-      const youtubeSubstr = 'youtube.com'
-      if (this.project.imgsrc.includes(youtubeSubstr)) {
-         this.isYoutubeLink = true;
-      }
-      else {
-         this.isYoutubeLink = false;
-      }
-    },
-    
-    checkDetails(detailslink) {
-       if (detailslink == "") {
-          this.showDetailsLink = false;
-       }
-       else {
-          this.showDetailsLink = true;
-       }
-
-    }
 
   }
 }
@@ -129,11 +89,7 @@ export default {
    /* background-color: #cacfff; */
    /* background-color: #5f6994; */
 }
-.card-img-col {
-   padding: 0%;
-   margin: 0%;
-   align-self: center;
-}
+
 #card-contents-col {
    margin-left: auto;
    margin-right: auto;
@@ -171,36 +127,11 @@ export default {
       /* text-align: center; */
       margin-top: .5rem;
    }
-   .yt-vid {
-      /* height: 0px; */
-      /* padding-top: 25px; */
-      /* padding-bottom: 56.2%; */
-      max-width: 300px;
-      position: relative;
-   }
-   .yt-vid iframe {
-      width: 100%;
-      height: 100%;
-   }
    .card-text {
       text-align: left;
    }
 }
 
-.yt-vid {
-   position: relative;
-   height: 0;
-   padding-bottom: 56.25%;
-   padding-right: 100%;
-   /* padding-left: 0; */
-}
-.yt-vid iframe {
-   position: absolute;
-   top:0;
-   bottom: 0;
-   width: 100%;
-   height: 100%;
-}
 
 .cardbody {
    padding: 0%;
@@ -209,17 +140,16 @@ export default {
    /* margin-top: 5%; */
    /* margin-bottom: 2%; */
 }
-.card-body {
-  /* padding: 0%; */
-}
+
 .linkbutton-col {
-   margin-top: 0%;
-   margin-left: 5%;
-   margin-right: 5%;
+   /* margin-top: 0%; */
+   padding-top: 1rem;
 }
-.details-button {
-   border-color: #5f6994;
-   border-radius: 0.5rem;
+
+.link-button {
+  background-color: #2d3142;
+  border-color: #B298DC;
+  color: #f7f8ff
 }
 
 </style>

@@ -15,6 +15,10 @@ export default {
           subtitle: "Title actually describes game's development",
           mainImage: {name: "", index: 0},
           images: [],
+          links: [
+            {title:"", url: 'https://github.com/niguelchaos/FeelTheDisaster'},
+            {title:"Final Presentation Poster", url: './ProjectDocuments/FeelTheDisasterdarkplain.pdf'},
+          ],
           descriptionComponent: "feel-the-disaster-desc"
       }
     }

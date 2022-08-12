@@ -15,6 +15,13 @@ export default {
           subtitle: "SDL Nightmare",
           mainImage: {name: "", index: 0},
           images: [],
+          links: [
+            {title:"", url: 'https://github.com/niguelchaos/GEATron'},
+            {title:"Final Report", url: './ProjectDocuments/GEATronReport.pdf'},
+            {title:"Mid-Term Presentation", url: './ProjectDocuments/MidtermTron.pdf'},
+            {title:"Final Presentation", url: './ProjectDocuments/FinalPresentationTron.pdf'},
+          ],
+          
           descriptionComponent: "tron-replica-desc"
       }
     }

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <b-container>
 
     <b-container class="description-container">
       <b-row>
@@ -57,8 +57,7 @@
       </b-row>
     </b-container>
       
-    <h3 class="align-center">Links</h3>
-    <!-- <p>Codebase:</p> -->
+    <!-- <h3 class="align-center">Links</h3>
     <b-row>
       <b-col class="link-col">
         
@@ -73,10 +72,9 @@
         </a>
 
       </b-col>
-    </b-row>
-    <!-- <br> <a href="./JengaFortressReport.pdf" target="_blank"><strong>Report</strong></a> -->
+    </b-row> -->
     
-   </div>
+  </b-container>
 </template>
 
 <style scoped>

@@ -2,7 +2,6 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
 import Resume from './views/Resume.vue'
-// import FeelTheDisaster from './views/projViews/FeelTheDisaster.vue'
 
 Vue.use(Router)
 
@@ -69,6 +68,11 @@ const routes = [
     path: '/dummypark',
     name: 'DummyPark',
     component: () => import('./views/projViews/DummyPark.vue')
+  },
+  {
+    path: '/cybercar',
+    name: 'Cybercar',
+    component: () => import('./views/projViews/Cybercar.vue')
   },
   
   {

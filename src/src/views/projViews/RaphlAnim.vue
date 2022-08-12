@@ -15,6 +15,10 @@ export default {
           subtitle: "His name's Raphl apparently",
           mainImage: {name: "", index: 0},
           images: [],
+          links: [
+            {title:"", url: 'https://github.com/niguelchaos/RaphlUnityIntegration'},
+            {title:"RaphlUnityExe.zip", url: './ProjectDocuments/RaphlAnimExe.zip'},
+          ],
           descriptionComponent: "raphl-anim-desc"
       }
     }

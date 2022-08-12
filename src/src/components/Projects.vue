@@ -56,7 +56,7 @@ export default {
         { num: 4, course: 'Agile Development Processes', title: 'Dummy Park: Visitor Web Application', text: 'This project consisted of developing a visitor web app of a fictional amusement park in a self organizing team. The main focus of this project was to follow agile methodologies and principles, mainly a scrumban process. ', 
             highlightTitle:"Highlights", tech: 'Agile Methodologies, Scrumban, Role Rotations', link: 'https://github.com/niguelchaos/dit192-team-4-visitor-app-fork', imgsrc: 'dummypark/overview.png', detailslink: "/dummypark" },
         { num: 3, course: 'Cyberphysical Systems: Systems of Systems', title: 'Autonomous Vehicles: Intersection Handling', text: 'Microservices developed and delivered for miniature vehicles, built on Raspberry Pi and Beagle Bone boards, to handle various traffic situations of an intersection. I created a PID controller for Adaptive Cruise Control.', 
-            highlightTitle:"Highlights", tech: 'C++, Docker, OpenCV, Git', link: 'https://github.com/niguelchaos/Cybercar-G5-copy', imgsrc: 'kiwicaractual.jpg', detailslink: "" },
+            highlightTitle:"Highlights", tech: 'C++, Docker, OpenCV, Git', link: 'https://github.com/niguelchaos/Cybercar-G5-copy', imgsrc: 'kiwicaractual.jpg', detailslink: "/cybercar" },
         { num: 2, course: 'Distributed Systems', title: 'Java Project Dependency Visualizer', text: 'Visualizer which illustrates the dependencies of a public Github Java Project. The backend was developed to be run on 5 separate physical systems across a WLAN network.', 
             highlightTitle:"Highlights", tech: 'MongoDB, Vue.js, Node.js, D3.js, Git', link: 'https://github.com/TiEkl/GrOneContinued', imgsrc: 'gronecropped.gif', detailslink: "" },
         { num: 1, course: 'Systems Development', title: 'Autonomous Vehicles: Parallel Parking', text: 'Arduino project of using a miniature vehicle to parallel park itself. Software was implemented and deployed on the self-driving Arduino minicar. We had to build the car ourselves with the provided parts. Best part of the project.', 
@@ -138,4 +138,6 @@ export default {
   padding-left: .5rem;
   padding-right: .5rem;
 }
+
+
 </style>

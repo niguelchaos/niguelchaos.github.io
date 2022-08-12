@@ -4,8 +4,7 @@
 
     <b-container class="details">
       <b-container class="section-heading">
-        <h1>Resume</h1>
-        <h6>Documents & Reports</h6>
+        <h1>Download Resume</h1>
         <hr id="heading-divider" class="divider my-3" />
       </b-container>
 
@@ -13,35 +12,17 @@
         <b-row>
           <b-col class="link-col">
             <a class="link-item float-center">
-              <b-button class="link-button cv-button" href="./NigelChao_Resume.pdf" target="_blank"><strong>Download CV (PDF)</strong></b-button>
+              <b-button class="link-button cv-button" href="./NigelChao_Resume.pdf" target="_blank"><strong>CV (PDF)</strong></b-button>
+            </a>
+          </b-col>
+          <b-col class="link-col">
+            <a class="link-item float-center">
+              <b-button class="link-button cv-button" href="./NigelChao_Resume_Comprehensive.pdf" target="_blank"><strong>Detailed CV (PDF)</strong></b-button>
             </a>
           </b-col>
         </b-row>
       </b-container>
       
-
-      <!-- <b-container class="details-item">
-        <h4>Academic Reports</h4>
-        <p>
-          A myriad of reports which give me PTSD or I simply like. Or both.
-        </p>
-
-        <b-row>
-          <b-col class="link-col">
-            <a class="link-item float-left">
-              <b-button class="link-button" href="./AcademicReports/DecisiveFinishers.pdf" target="_blank">Gameplay Style: Decisive Finishers</b-button>
-            </a>
-
-            <a class="link-item float-left">
-              <b-button class="link-button" href="./AcademicReports/KaraokeAsGame.pdf" target="_blank">Karaoke as a Game</b-button>
-            </a>
-
-            <a class="link-item float-left">
-              <b-button class="link-button" href="https://gupea.ub.gu.se/bitstream/2077/67100/1/gupea_2077_67100_1.pdf" target="_blank">Evaluating the Trade-offs of Diversity-Based Test Prioritization: An Experiment</b-button>
-            </a>
-          </b-col>
-        </b-row>
-      </b-container> -->
 
       <education-card></education-card>
 
@@ -107,6 +88,7 @@ export default {
   display: block;
   align-items: baseline;
   justify-content: center;
+  padding-bottom: 1rem;
 }
 .link-button {
   color:  #e9edff;
@@ -116,8 +98,8 @@ export default {
 }
 .cv-button {
   font-size: 20px;
-  padding: 1rem;
-  background-color: #D1603D;
+  background-color: #4c357763;
+  border-color: #B298DC;
 }
 .link-item {
   /* margin-right: 1rem; */

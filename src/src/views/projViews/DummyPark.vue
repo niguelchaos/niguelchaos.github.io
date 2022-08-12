@@ -15,6 +15,11 @@ export default {
           subtitle: "This was the largest team I ever worked with",
           mainImage: {name: "", index: 0},
           images: [],
+          links: [
+            {title:"", url: 'https://github.com/niguelchaos/dit192-team-4-visitor-app-fork'},
+            {title:"Final Presentation", url: './ProjectDocuments/Dummypark_Final_Presentation.pdf'},
+            {title:"Final Report", url: './ProjectDocuments/Dummypark_Postmortem.pdf'},
+          ],
           descriptionComponent: "dummy-park-desc"
       }
     }

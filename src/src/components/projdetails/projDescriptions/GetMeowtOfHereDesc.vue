@@ -1,6 +1,5 @@
 <template>
-  <div>
-
+  <b-container>
      
      <b-container class="description-container">
       <b-row>
@@ -116,29 +115,7 @@
       We did try to prioritize the game being fun rather than raising empathy, as we thought that it was a more achievable goal. The majority of players enjoyed the game, however, which is a good sign.
     </p>
 
-      
-    <h3 class="align-center">Links</h3>
-    <b-container>
-    <b-row>
-      <b-col class="link-col">
-
-        <a class="link-item float-left">
-          <a type="button" class="btn btn-outline-light btn-lg pr-3" v-bind:href="'https://natashamangan.itch.io/get-meowt-of-here'" target="_blank">
-            <em :class="'bi bi-box-arrow-up-right'" width="32" height="32" fill="currentColor" viewBox="0 0 32 32"></em>
-          </a>
-        </a>
-
-        <a class="link-item">
-          <b-button class="link-button" href="./ProjectDocuments/GetMeowtofHereReport.pdf" target="_blank"><strong>Read Game Report</strong></b-button>
-        </a>
-      
-        
-      </b-col>
-    </b-row>
-    </b-container>
-
-
-   </div>
+  </b-container>
 </template>
 
 <script>
@@ -183,92 +160,19 @@
   justify-content: center;
 }
 .link-button {
-  background-color: #5C6299;
+  background-color: #5c629900;
+  border-color: #B298DC;
 }
 .link-item {
   margin-right: 1rem;
   margin-bottom: 1rem;
 }
-.details-image {
-  width: 100%;
-  height: auto;
-}
+
 .description-container {
   padding-bottom: 5%;
 }
 
-/* lightbox */
 
-.images-wrapper {
-  /* height: 100px; */
-}
-.image {
-  /* min-height: 100px; */
-}
-
-/* slider */
-
-.thumb-example {
-	 height: 480px;
-	 background-color: black;
-}
- .swiper .swiper-slide {
-	 background-size: cover;
-	 background-position: center;
-}
- .swiper .swiper-slide.slide-1 {
-	 background-image: url('~@/assets/empathuzzler.png');
-}
- .swiper .swiper-slide.slide-2 {
-	 background-image: url('/smugportfolio2.png');
-}
-
- .swiper.gallery-top {
-	 height: 80%;
-	 width: 100%;
-}
- .swiper.gallery-thumbs {
-	 height: 20%;
-	 box-sizing: border-box;
-	 padding: 0;
-}
- .swiper.gallery-thumbs .swiper-slide {
-	 width: 25%;
-	 height: 100%;
-	 opacity: 0.4;
-}
- .swiper.gallery-thumbs .swiper-slide-active {
-	 opacity: 1;
-}
-
-/* .carousel-control-prev-icon,
-.carousel-control-next-icon {
-  height: 100px;
-  width: 100px;
-  outline: black;
-  background-size: 100%, 100%;
-  border-radius: 50%;
-  border: 1px solid black;
-  background-image: none;
-}
-
-.carousel-control-next-icon:after
-{
-  content: '>';
-  font-size: 55px;
-  color: red;
-}
-
-.carousel-control-prev-icon:after {
-  content: '<';
-  font-size: 55px;
-  color: red;
-} */
-
-.carousel-control-next,
-.carousel-control-prev /*, .carousel-indicators */ {
-    filter: invert(100%) !important;
-}
  
 </style>
 

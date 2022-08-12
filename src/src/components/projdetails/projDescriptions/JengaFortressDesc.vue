@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <b-container>
 
     <b-container class="description-container">
       <b-row>
@@ -98,37 +98,8 @@
       <li>C#</li>
       <li>Version Control - Git</li>
     </ul>
-
-    <h3 class="align-center">Links</h3>
-    <!-- <p>Codebase:</p> -->
-    <b-row class="link-row" align-v="center">
-
-      <b-col class="link-item">
-        <a type="button" class="btn btn-outline-light btn-lg pr-3" v-bind:href="'https://github.com/niguelchaos/JengaFortress'" target="_blank">
-          <em :class="'bi bi-github'" width="32" height="32" fill="currentColor" viewBox="0 0 32 32"></em>
-        </a>
-      </b-col>
-
-      <b-col class="link-item">
-        <b-button class="link-button" href="./ProjectDocuments/JengaFortressPitches.pdf" target="_blank"><strong>Read Initial Pitches</strong></b-button>
-      </b-col>
-
-      <b-col class="link-item">
-        <b-button class="link-button" href="./ProjectDocuments/JengaFortressReport.pdf" target="_blank"><strong>Read Game Report</strong></b-button>
-      </b-col>
-      
-      <b-col class="link-item">
-        <b-button class="link-button" href="./ProjectDocuments/JengaFortressMidPresentation.pdf" target="_blank"><strong>Mid-term Presentation</strong></b-button>
-      </b-col>
-
-      <b-col class="link-item">
-        <b-button class="link-button" href="./ProjectDocuments/JengFort.apk" target="_blank"><strong>Download JengFort.apk</strong></b-button>
-      </b-col>
-
-    </b-row>
-    <!-- <br> <a href="./JengaFortressReport.pdf" target="_blank"><strong>Report</strong></a> -->
     
-   </div>
+   </b-container>
 </template>
 
 <script>
@@ -162,7 +133,8 @@
   margin-bottom: 1rem;
 }
 .link-button {
-  background-color: #5C6299;
+  background-color: #5c629900;
+  border-color: #B298DC;
 }
 .description-container {
   padding-bottom: 5%;

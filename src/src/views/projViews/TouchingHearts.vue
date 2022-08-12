@@ -15,6 +15,11 @@ export default {
           subtitle: "An Exercise in Prototyping",
           mainImage: {name: "", index: 0},
           images: [],
+          links: [
+            {title:"Final Presentation Slides", url: './ProjectDocuments/TouchingHeartsPp.pdf'},
+           
+          ],
+          
           descriptionComponent: "touching-hearts-desc"
       }
     }

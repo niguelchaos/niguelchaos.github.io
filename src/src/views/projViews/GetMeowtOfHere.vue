@@ -15,6 +15,10 @@ export default {
             subtitle: "Local Multiplayer Empathetic Puzzler",
             mainImage: {name: "", index: 0},
             images: [],
+            links: [
+              {title:"Itch Page", url: 'https://natashamangan.itch.io/get-meowt-of-here'},
+              {title:"Game Report", url: './ProjectDocuments/GetMeowtofHereReport.pdf'},
+            ],
             descriptionComponent: "get-meowt-of-here-desc"
         }
     }
