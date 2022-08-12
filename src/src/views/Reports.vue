@@ -59,18 +59,18 @@ export default {
       return {
         reports: [
           { num: 3, course: 'Master Thesis', title: 'Player Environmental Awareness: Rules of Thumb for Environmental Storytelling in Role-Playing Games', text: 'We explored how different game aspects and techniques are used to support environmental storytelling. Apparently the thesis is PhD sized which means we did all that extra work for no reason why i want a refund of my brain cells', 
-              highlightTitle:"Highlights", tech: 'big meme energy', reportlink: './AcademicReports/MasterThesis.pdf', 
+              highlightTitle:"Highlights", tech: 'bigger meme pain energy', link: './AcademicReports/MasterThesis.pdf', 
               docs: [
                 {title: "Final Presentation.pdf", link: './AcademicReports/ReportDocuments/MscThesisFinalPresentation.pdf'},
               ]},
           { num: 2, course: 'Gameplay Design', title: 'Gameplay Style: Decisive Finishers', text: 'Explorations of a gameplay pattern identified in a wide range of games. The actual goal of the entire report was to justify putting Lamar roasting Franklin on the first page eyyyy gottem', 
-              highlightTitle:"Highlights", tech: 'big meme energy', reportlink: './AcademicReports/DecisiveFinishers.pdf', 
+              highlightTitle:"Highlights", tech: 'big meme energy', link: './AcademicReports/DecisiveFinishers.pdf', 
               docs: []},
           { num: 1, course: 'Introduction to Game Design', title: 'Karaoke - Behavioural changes of a Non-Game considered as a Game', text: 'Where I am forced to consider, if you will, hypothetically, that karaoke is a game.', 
-              highlightTitle:"Highlights", tech: 'Game Models, Gamification, Mechanics, Role Playing', reportlink: './AcademicReports/KaraokeAsGame.pdf', 
+              highlightTitle:"Highlights", tech: 'Game Models, Gamification, Mechanics, Role Playing', link: './AcademicReports/KaraokeAsGame.pdf', 
               docs: []},
           { num: 0, course: 'Bachelor Thesis', title: 'Evaluating the Trade-offs of Diversity-Based Test Prioritization: An Experiment', text: 'Jaccard. Very nice. Fast and good on the Unit level. But thats nothing look at NCD. Nice jesus NCD is really super. But wait you ain\'t seen SS yet. Impressive, very nice. Lets see Random\'s performance. Look at that speed, the ignorance of the test contents. Oh my god its so cheap too- ', 
-              highlightTitle:"Highlights", tech: 'Diversity-based Testing, Test Case Prioritization, Natural Language Processing', reportlink: 'https://gupea.ub.gu.se/bitstream/2077/67100/1/gupea_2077_67100_1.pdf', 
+              highlightTitle:"Highlights", tech: 'Diversity-based Testing, Test Case Prioritization, Natural Language Processing', link: 'https://gupea.ub.gu.se/bitstream/2077/67100/1/gupea_2077_67100_1.pdf', 
               docs: [
                 {title: "Progress Presentation.pdf", link: './AcademicReports/ReportDocuments/BscThesisProgressPresentation.pdf'},
                 {title: "Final Presentation.pdf", link: './AcademicReports/ReportDocuments/BscThesisFinalPresentation.pdf'}

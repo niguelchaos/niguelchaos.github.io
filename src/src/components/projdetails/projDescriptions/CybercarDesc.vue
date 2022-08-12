@@ -2,14 +2,14 @@
   <b-container>
 
      
-     <b-container class="description-container">
+    <b-container class="description-container">
       <b-row>
-        <b-col lg="12">
+        <!-- <b-col lg="12">
           <h3>Description</h3>
           <p>
             
           </p>
-        </b-col>
+        </b-col> -->
 
       </b-row>
     </b-container>
