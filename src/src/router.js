@@ -60,6 +60,11 @@ const routes = [
     component: () => import('./views/projViews/JengaFortress.vue')
   },
   {
+    path: '/jengafortresspc',
+    name: 'JengaFortress_PC',
+    component: () => import('./views/projViews/JengaFortressPC.vue')
+  },
+  {
     path: '/raphlanim',
     name: 'RaphlAnim',
     component: () => import('./views/projViews/RaphlAnim.vue')

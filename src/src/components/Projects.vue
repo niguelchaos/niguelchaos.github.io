@@ -66,7 +66,7 @@ export default {
       ],
       gamedevProjects: [
         { num: 7, course: 'Personal Project', title: 'Jenga Fortress PC', text: 'With the main attempt to learn about multiplayer, a currently incomplete "port" of the original. Work in progress.', 
-            highlightTitle:"Highlights", tech: 'Multiplayer, Unity Netcode', roles:'', link: 'https://github.com/niguelchaos/JengaFortress_PC', imgsrc: 'https://www.youtube.com/embed/l_vUDjO9Uzw', detailslink: "" },
+            highlightTitle:"Highlights", tech: 'Multiplayer, Unity Netcode', roles:'', link: 'https://github.com/niguelchaos/JengaFortress_PC', imgsrc: 'https://www.youtube.com/embed/l_vUDjO9Uzw', detailslink: "/jengafortresspc" },
         { num: 6, course: 'Experimental Game Design (Group Project)', title: 'Jenga Fortress AR', text: 'AR game where you explode fortresses made out of wooden blocks.', 
             highlightTitle:"Highlights", tech: 'Mobile AR Limitations, Physics', roles:'Game Design, Programming', link: 'https://github.com/niguelchaos/JengaFortress', imgsrc: 'https://www.youtube.com/embed/l_vUDjO9Uzw', detailslink: "/jengafortress" },
         { num: 5, course: 'Game Engine Architecture', title: 'Tron(1982) Replica', text: 'Partial recreation of the light cycle minigame from Bally Midway\'s Tron, with a focus on architectural decisions. Due to time constraints, local multiplayer was implemented instead.', 
