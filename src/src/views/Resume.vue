@@ -15,11 +15,11 @@
               <b-button class="link-button cv-button" href="./NigelChao_Resume.pdf" target="_blank"><strong>CV (PDF)</strong></b-button>
             </a>
           </b-col>
-          <b-col class="link-col">
+          <!-- <b-col class="link-col">
             <a class="link-item float-center">
               <b-button class="link-button cv-button" href="./NigelChao_Resume_Comprehensive.pdf" target="_blank"><strong>Detailed CV (PDF)</strong></b-button>
             </a>
-          </b-col>
+          </b-col> -->
         </b-row>
       </b-container>
       

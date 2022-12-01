@@ -36,7 +36,7 @@ export default {
   data() {
     return {
       education: [
-        { location: 'University of Gothenburg', degree: 'Master\'s Programme in Game Design and Technology', date: '2020 - now', text: 'Slight Headache.' },
+        { location: 'University of Gothenburg', degree: 'Master\'s Programme in Game Design and Technology', date: '2020 - 2022', text: 'Slight Headache.' },
         { location: 'University of Gothenburg', degree: 'Bachelor\'s Programme in Software Engineering and Management', date: '2017 - 2020', text: 'Moderate Pain.' },
         { location: 'Hvitfeldtska Gymnasiet', degree: 'International Baccalaureate', date: '2014 - 2017', text: 'Pain.' }
       ]

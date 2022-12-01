@@ -59,7 +59,7 @@ export default {
       return {
         reports: [
           { num: 3, course: 'Master Thesis', title: 'Player Environmental Awareness: Rules of Thumb for Environmental Storytelling in Role-Playing Games', text: 'We explored how different game aspects and techniques are used to support environmental storytelling. Apparently the thesis is PhD sized which means we did all that extra work for no reason why i want a refund of my brain cells', 
-              highlightTitle:"Highlights", tech: 'bigger meme pain energy', link: './AcademicReports/MasterThesis.pdf', 
+              highlightTitle:"Highlights", tech: 'bigger meme pain energy', link: 'https://gupea.ub.gu.se/handle/2077/74250', 
               docs: [
                 {title: "Final Presentation.pdf", link: './AcademicReports/ReportDocuments/MscThesisFinalPresentation.pdf'},
               ]},
