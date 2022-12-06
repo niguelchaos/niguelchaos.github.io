@@ -8,7 +8,7 @@
         <h4>Academic Reports</h4>
         <p>
           A myriad of reports which give me PTSD or I simply like. Or both.
-          I mean who gon read this
+          I mean who gon read this if you do reach this page congrats have fun
         </p>
         <hr id=dark-divider class="divider my-4" />
 

@@ -6,13 +6,15 @@
         <b-col lg="5">
           <h3>Description</h3>
           Project with the goal to learn multiplayer basics. 
-
+          
+          <p>I know this page is quite empty, and I am very sorry for that.</p> 
+          <p> 
+            It was quite painful learning multiplayer (basics), animations, and generally getting FPS-elements to work together. 
+          </p>
         </b-col>
 
         <b-col lg="7">
-          <!-- <div class="yt-vid"> -->
-              <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/l_vUDjO9Uzw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-          </div>
+          <b-img center :src="require(`@/assets/jengfortpc_multi.gif`)" alt="Image" class="details-image"></b-img>
         </b-col>
       </b-row>
 
@@ -22,7 +24,6 @@
     <h3>Tools used:</h3>
     <ul>
       <li>Unity Netcode</li>
-      <li>C#</li>
       <li>Version Control - Git</li>
     </ul>
     

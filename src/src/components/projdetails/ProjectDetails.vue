@@ -47,7 +47,7 @@ import TimeloopMetroidDesc from './projDescriptions/TimeloopMetroidDesc.vue';
 import GetMeowtOfHereDesc from './projDescriptions/GetMeowtOfHereDesc.vue';
 import TronReplicaDesc from './projDescriptions/TronReplicaDesc.vue';
 import JengaFortressDesc from './projDescriptions/JengaFortressDesc.vue';
-import JengaFortressPCDesc from './projDescriptions/JengaFortressPCDesc.vue';
+import JengaFortressPcDesc from './projDescriptions/JengaFortressPCDesc.vue';
 import RaphlAnimDesc from './projDescriptions/RaphlAnimDesc.vue';
 import DummyParkDesc from './projDescriptions/DummyParkDesc.vue';
 import CybercarDesc from './projDescriptions/CybercarDesc.vue';
@@ -62,7 +62,7 @@ export default {
     GetMeowtOfHereDesc,
     TronReplicaDesc,
     JengaFortressDesc,
-    JengaFortressPCDesc,
+    JengaFortressPcDesc,
     RaphlAnimDesc,
     DummyParkDesc,
     CybercarDesc
